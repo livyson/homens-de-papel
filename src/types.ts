@@ -24,6 +24,8 @@ export type CastMember = {
   /** Nome do personagem como no roteiro, ex: "Coco" */
   character: string
   lineCount: number
+  /** Cenas em que o personagem tem fala */
+  sceneCount: number
 }
 
 export type ActId = string

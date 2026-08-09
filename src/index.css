@@ -161,6 +161,14 @@ button {
   letter-spacing: 0.04em;
 }
 
+.credit {
+  margin: 1.75rem 0 0.5rem;
+  text-align: center;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
 .hero--compact {
   padding-top: 0.5rem;
 }
@@ -799,6 +807,13 @@ button {
   border-color: var(--amber);
   color: var(--ink);
   background: var(--amber);
+}
+
+.scene-item__empty {
+  padding: 0.85rem 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  list-style: none;
 }
 
 .scene-item__bar {

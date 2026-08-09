@@ -38,7 +38,9 @@ export function CharacterSelect({ progress, onSelect }: Props) {
                   <span className="cast-item__actor">{member.actor}</span>
                   <span className="cast-item__role">= {member.character}</span>
                   <span className="cast-item__meta">
-                    {member.lineCount} falas
+                    {member.sceneCount} cena
+                    {member.sceneCount === 1 ? '' : 's'} · {member.lineCount}{' '}
+                    falas
                     {done > 0 ? ` · ${done} decoradas` : ''}
                   </span>
                 </button>
@@ -47,6 +49,8 @@ export function CharacterSelect({ progress, onSelect }: Props) {
           })}
         </ul>
       </section>
+
+      <p className="credit">App desenvolvido por Livyson Saymon</p>
     </div>
   )
 }

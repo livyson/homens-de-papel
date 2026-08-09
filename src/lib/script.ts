@@ -54,16 +54,25 @@ function resolveCharacter(elencoKey: string, speakers: string[]): string | null 
   return best?.name ?? null
 }
 
-function countLines(character: string): number {
-  let n = 0
-  for (const cenas of Object.values(play.atos)) {
+function countParticipation(character: string): {
+  lineCount: number
+  sceneCount: number
+} {
+  let lineCount = 0
+  const scenes = new Set<string>()
+  for (const [actId, cenas] of Object.entries(play.atos)) {
     for (const cena of cenas) {
+      let inScene = false
       for (const f of cena.falas) {
-        if (f.personagem === character) n += 1
+        if (f.personagem === character) {
+          lineCount += 1
+          inScene = true
+        }
       }
+      if (inScene) scenes.add(sceneKey(actId, cena.cena))
     }
   }
-  return n
+  return { lineCount, sceneCount: scenes.size }
 }
 
 export function getActLabel(actId: string): string {
@@ -108,11 +117,14 @@ export function getCast(): CastMember[] {
   for (const [elencoKey, actor] of Object.entries(play.elenco)) {
     const character = resolveCharacter(elencoKey, speakers)
     if (!character) continue
+    const { lineCount, sceneCount } = countParticipation(character)
+    if (lineCount === 0) continue
     members.push({
       elencoKey,
       actor,
       character,
-      lineCount: countLines(character),
+      lineCount,
+      sceneCount,
     })
   }
   members.sort((a, b) => a.actor.localeCompare(b.actor, 'pt-BR'))
@@ -189,6 +201,7 @@ export function getLinesForScenes(
   )
 }
 
+/** Cenas em que o personagem tem pelo menos uma fala (participação no roteiro). */
 export function scenesForCharacter(character: string): Array<
   SceneRef & { lineCount: number; lineIds: string[] }
 > {
@@ -210,12 +223,12 @@ export function scenesForCharacter(character: string): Array<
     entry.ids.push(line.id)
   }
 
-  // Preserve play order, including scenes with 0 lines? Only show scenes with lines.
+  // Ordem da peça; nunca inclui cenas sem fala do personagem.
   const ordered: Array<SceneRef & { lineCount: number; lineIds: string[] }> = []
   for (const ref of listScenes()) {
     const key = sceneKey(ref.actId, ref.scene)
     const entry = counts.get(key)
-    if (!entry) continue
+    if (!entry || entry.ids.length === 0) continue
     ordered.push({
       ...ref,
       lineCount: entry.ids.length,
@@ -223,6 +236,11 @@ export function scenesForCharacter(character: string): Array<
     })
   }
   return ordered
+}
+
+export function actsForCharacter(character: string): { id: string; label: string }[] {
+  const actIds = new Set(scenesForCharacter(character).map((s) => s.actId))
+  return listActs().filter((act) => actIds.has(act.id))
 }
 
 export function getCastMember(character: string): CastMember | undefined {

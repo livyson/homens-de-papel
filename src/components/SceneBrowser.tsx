@@ -6,8 +6,8 @@ import {
 } from '../lib/progress'
 import { isSpeechSupported } from '../lib/speech'
 import {
+  actsForCharacter,
   getCastMember,
-  listActs,
   sceneKey,
   scenesForCharacter,
 } from '../lib/script'
@@ -35,7 +35,7 @@ export function SceneBrowser({
   const speechOk = useMemo(() => isSpeechSupported(), [])
   const member = getCastMember(character)
   const scenes = useMemo(() => scenesForCharacter(character), [character])
-  const acts = listActs()
+  const acts = useMemo(() => actsForCharacter(character), [character])
   const charProg = getCharacterProgress(progress, character)
 
   const [selected, setSelected] = useState<string[]>([])
@@ -81,7 +81,8 @@ export function SceneBrowser({
           {member?.actor ?? 'Ator'} = {character}
         </p>
         <p className="hero__sub">
-          {totalMemorized}/{totalLines} falas decoradas na peça
+          {scenes.length} cena{scenes.length === 1 ? '' : 's'} com a sua
+          participação · {totalMemorized}/{totalLines} falas decoradas
         </p>
       </header>
 
@@ -130,10 +131,10 @@ export function SceneBrowser({
 
       <section className="panel">
         <div className="panel__head">
-          <h2 className="panel__title">Ato / Cena</h2>
+          <h2 className="panel__title">Suas cenas</h2>
           <div className="panel__actions">
             <button type="button" className="btn btn--ghost" onClick={selectVisible}>
-              Visíveis
+              Todas
             </button>
             <button type="button" className="btn btn--ghost" onClick={() => setSelected([])}>
               Limpar
@@ -141,27 +142,36 @@ export function SceneBrowser({
           </div>
         </div>
 
-        <div className="act-tabs" role="tablist" aria-label="Filtro de ato">
-          <button
-            type="button"
-            className={`act-tabs__btn ${actFilter === 'all' ? 'is-on' : ''}`}
-            onClick={() => setActFilter('all')}
-          >
-            Todos
-          </button>
-          {acts.map((act) => (
+        <p className="panel__hint">
+          Só aparecem cenas em que {character} tem fala.
+        </p>
+
+        {acts.length > 1 && (
+          <div className="act-tabs" role="tablist" aria-label="Filtro de ato">
             <button
-              key={act.id}
               type="button"
-              className={`act-tabs__btn ${actFilter === act.id ? 'is-on' : ''}`}
-              onClick={() => setActFilter(act.id)}
+              className={`act-tabs__btn ${actFilter === 'all' ? 'is-on' : ''}`}
+              onClick={() => setActFilter('all')}
             >
-              {act.label}
+              Todas
             </button>
-          ))}
-        </div>
+            {acts.map((act) => (
+              <button
+                key={act.id}
+                type="button"
+                className={`act-tabs__btn ${actFilter === act.id ? 'is-on' : ''}`}
+                onClick={() => setActFilter(act.id)}
+              >
+                {act.label}
+              </button>
+            ))}
+          </div>
+        )}
 
         <ul className="scene-list">
+          {visible.length === 0 && (
+            <li className="scene-item__empty">Nenhuma cena neste filtro.</li>
+          )}
           {visible.map((s) => {
             const key = sceneKey(s.actId, s.scene)
             const memorized = countMemorizedIn(progress, character, s.lineIds)
