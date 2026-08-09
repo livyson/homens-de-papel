@@ -2,26 +2,30 @@ import { useEffect, useId, useState, type FormEvent } from 'react'
 import { DiffFeedback } from './DiffFeedback'
 import { useSpeechRecognition } from '../hooks/useSpeechRecognition'
 import { compareLines } from '../lib/normalize'
-import type { CompareResult, InputMode, Turn } from '../types'
+import type { CharacterLine, CompareResult, InputMode } from '../types'
 
 type Props = {
-  turn: Turn
+  line: CharacterLine
+  character: string
   mode: InputMode
   attemptCount: number
+  alreadyMemorized: boolean
   onCorrect: () => void
   onSkip: () => void
   onAttempt: () => void
 }
 
-export function FridoPrompt({
-  turn,
+export function LinePrompt({
+  line,
+  character,
   mode,
   attemptCount,
+  alreadyMemorized,
   onCorrect,
   onSkip,
   onAttempt,
 }: Props) {
-  const expected = turn.text ?? ''
+  const expected = line.text
   const inputId = useId()
   const [value, setValue] = useState('')
   const [interim, setInterim] = useState('')
@@ -42,7 +46,7 @@ export function FridoPrompt({
     setInterim('')
     setResult(null)
     setRevealed(false)
-  }, [expected])
+  }, [line.id])
 
   function check(raw: string) {
     onAttempt()
@@ -60,21 +64,39 @@ export function FridoPrompt({
 
   return (
     <section className="frido" aria-labelledby={inputId}>
-      <div className="frido__badge">Sua vez — Frido</div>
-      {turn.directions?.map((d, i) => (
-        <p key={i} className="frido__dir">
-          ({d})
-        </p>
-      ))}
-      <p className="frido__cue">Produza a fala de cor.</p>
+      <div className="frido__badge">Sua vez — {character}</div>
       <p className="frido__meta">
-        Tentativas nesta fala: <strong>{attemptCount}</strong>
+        {line.actLabel} · Cena {line.scene}
+        {alreadyMemorized ? ' · já decorada' : ''}
+        {' · '}tentativas: <strong>{attemptCount}</strong>
       </p>
+
+      <div className="cue">
+        <p className="cue__label">Deixa</p>
+        {line.cue ? (
+          <>
+            <p className="cue__speaker">{line.cue.speaker}</p>
+            <p className="cue__text">“{line.cue.text}”</p>
+          </>
+        ) : (
+          <p className="cue__text cue__text--empty">
+            (Sem deixa — primeira fala da cena ou abertura)
+          </p>
+        )}
+      </div>
+
+      {line.directions.length > 0 && (
+        <p className="frido__dir">
+          ({line.directions.join(' ')})
+        </p>
+      )}
+
+      <p className="frido__cue">Modo cego — produza a fala de memória.</p>
 
       {mode === 'type' ? (
         <form className="frido__form" onSubmit={handleSubmit}>
           <label className="sr-only" htmlFor={inputId}>
-            Digite a fala do Frido
+            Digite a fala de {character}
           </label>
           <textarea
             id={inputId}
@@ -104,9 +126,7 @@ export function FridoPrompt({
             {listening ? 'Ouvindo… toque para parar' : 'Toque para falar'}
           </button>
           {(interim || value) && (
-            <p className="frido__transcript">
-              {interim || value}
-            </p>
+            <p className="frido__transcript">{interim || value}</p>
           )}
           {error && <p className="frido__error">{error}</p>}
           {value && !listening && (

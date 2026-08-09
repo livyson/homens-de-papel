@@ -1,81 +1,151 @@
-import type { ProgressState } from '../types'
-import { attemptKey } from './normalize'
+import type { CharacterProgress, ProgressState } from '../types'
 
-const STORAGE_KEY = 'homens-de-papel:progress:v1'
+const STORAGE_KEY = 'homens-de-papel:progress:v2'
+const LEGACY_KEY = 'homens-de-papel:progress:v1'
+
+function emptyCharacter(): CharacterProgress {
+  return { memorized: [], attempts: {}, completedScenes: [] }
+}
 
 const empty = (): ProgressState => ({
-  completedScenes: [],
-  attempts: {},
+  version: 2,
+  byCharacter: {},
   updatedAt: new Date().toISOString(),
 })
 
 export function loadProgress(): ProgressState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return empty()
-    const parsed = JSON.parse(raw) as ProgressState
-    return {
-      completedScenes: Array.isArray(parsed.completedScenes)
-        ? parsed.completedScenes
-        : [],
-      attempts:
-        parsed.attempts && typeof parsed.attempts === 'object'
-          ? parsed.attempts
-          : {},
-      updatedAt: parsed.updatedAt || new Date().toISOString(),
+    if (raw) {
+      const parsed = JSON.parse(raw) as ProgressState
+      if (parsed.version === 2 && parsed.byCharacter) {
+        return {
+          version: 2,
+          byCharacter: parsed.byCharacter,
+          lastCharacter: parsed.lastCharacter,
+          updatedAt: parsed.updatedAt || new Date().toISOString(),
+        }
+      }
     }
+    // limpa legado Frido-only sem migrar (schema diferente)
+    localStorage.removeItem(LEGACY_KEY)
   } catch {
-    return empty()
+    /* ignore */
   }
+  return empty()
 }
 
 export function saveProgress(state: ProgressState): void {
-  const next = { ...state, updatedAt: new Date().toISOString() }
+  const next = { ...state, version: 2 as const, updatedAt: new Date().toISOString() }
   localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
 }
 
-export function recordAttempt(
+function withCharacter(
   state: ProgressState,
-  scene: string,
-  turnIndex: number,
+  character: string,
+  updater: (current: CharacterProgress) => CharacterProgress,
 ): ProgressState {
-  const key = attemptKey(scene, turnIndex)
+  const current = state.byCharacter[character] ?? emptyCharacter()
+  const nextChar = updater(current)
   const next: ProgressState = {
     ...state,
-    attempts: {
-      ...state.attempts,
-      [key]: (state.attempts[key] ?? 0) + 1,
+    lastCharacter: character,
+    byCharacter: {
+      ...state.byCharacter,
+      [character]: nextChar,
     },
   }
   saveProgress(next)
   return next
 }
 
+export function getCharacterProgress(
+  state: ProgressState,
+  character: string,
+): CharacterProgress {
+  return state.byCharacter[character] ?? emptyCharacter()
+}
+
+export function recordAttempt(
+  state: ProgressState,
+  character: string,
+  lineId: string,
+): ProgressState {
+  return withCharacter(state, character, (current) => ({
+    ...current,
+    attempts: {
+      ...current.attempts,
+      [lineId]: (current.attempts[lineId] ?? 0) + 1,
+    },
+  }))
+}
+
+export function markMemorized(
+  state: ProgressState,
+  character: string,
+  lineId: string,
+): ProgressState {
+  return withCharacter(state, character, (current) => {
+    if (current.memorized.includes(lineId)) return current
+    return {
+      ...current,
+      memorized: [...current.memorized, lineId],
+    }
+  })
+}
+
+export function unmarkMemorized(
+  state: ProgressState,
+  character: string,
+  lineId: string,
+): ProgressState {
+  return withCharacter(state, character, (current) => ({
+    ...current,
+    memorized: current.memorized.filter((id) => id !== lineId),
+  }))
+}
+
 export function markSceneComplete(
   state: ProgressState,
-  scene: string,
+  character: string,
+  sceneKeyValue: string,
 ): ProgressState {
-  if (state.completedScenes.includes(scene)) {
-    saveProgress(state)
-    return state
-  }
-  const next: ProgressState = {
-    ...state,
-    completedScenes: [...state.completedScenes, scene],
-  }
+  return withCharacter(state, character, (current) => {
+    if (current.completedScenes.includes(sceneKeyValue)) return current
+    return {
+      ...current,
+      completedScenes: [...current.completedScenes, sceneKeyValue],
+    }
+  })
+}
+
+export function countMemorizedIn(
+  state: ProgressState,
+  character: string,
+  lineIds: string[],
+): number {
+  const set = new Set(getCharacterProgress(state, character).memorized)
+  return lineIds.reduce((n, id) => n + (set.has(id) ? 1 : 0), 0)
+}
+
+export function setLastCharacter(
+  state: ProgressState,
+  character: string,
+): ProgressState {
+  const next = { ...state, lastCharacter: character }
   saveProgress(next)
   return next
 }
 
-export function getSceneAttempts(
+export function clearCharacterProgress(
   state: ProgressState,
-  scene: string,
-  turnIndexes: number[],
-): number {
-  return turnIndexes.reduce(
-    (sum, idx) => sum + (state.attempts[attemptKey(scene, idx)] ?? 0),
-    0,
-  )
+  character: string,
+): ProgressState {
+  const byCharacter = { ...state.byCharacter }
+  delete byCharacter[character]
+  const next = { ...state, byCharacter }
+  saveProgress(next)
+  return next
 }
 
 export function clearProgress(): ProgressState {

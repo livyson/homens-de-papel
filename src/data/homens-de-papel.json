@@ -1,0 +1,4657 @@
+{
+  "titulo": "Homens de Papel",
+  "autor": "Plínio Marcos",
+  "elenco": {
+    "COCO": "Tiago",
+    "BERRÃO": "Gui",
+    "CHICONA": "Nina",
+    "MARIA VAI": "Íris",
+    "TIÃO": "Renato",
+    "NOCA": "Isa",
+    "BICHADO": "Raul",
+    "FRIDO": "Liv",
+    "NHANHA": "Ana",
+    "GÁ": "Camila",
+    "POQUINHA": "Dani",
+    "PEQUENA": "Marcela",
+    "TONHA": "Vanessa",
+    "ZÉ MIÚDO": "Pablo",
+    "BENTO": "André",
+    "CARCARÁ": "Zener",
+    "TOM DO RELÓGIO": "João",
+    "Dona Ju": "Neidinha"
+  },
+  "atos": {
+    "PRIMEIRO ATO": [
+      {
+        "cena": "I",
+        "falas": [
+          {
+            "personagem": null,
+            "fala": "(Ao abrir o pano, Coco, Tião, Maria-Vai, Chicona e Noca estão diante de Berrão, que traz um",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": null,
+            "fala": "revólver na cinta e uma balança de gancho na mão. Cada um dos catadores de papel arrastam",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": null,
+            "fala": "sacos cheios de papel)",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Avança o primeiro. (Coco aproxima-se)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Apanhei três sacos."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "E daí? O peso é que interessa."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Estão bem cheinhos."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "A balança é que vai dizer."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Nos três sacos, um pelo outro, deve ter uns trinta quilos."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Vamos ver. (Pesa o primeiro saco) Três quilos."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Só?!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Só por que?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não foi mole arrastar os sacos até aqui."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "É que tu ta podre. Pensa que cachaça sustenta? Tem que comer às vezes."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não bebo."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Come com farinha. (Pesa o segundo saco) Dois e meio."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Tá marcando mais."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Estou vendo. Não sou cego."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Então não é dois e meio."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Aqui a gente sempre,arredonda."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Pra menos."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "É!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Mas tá dando quase três."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Dois e meio, e fim. Se não estiver contente, vai vender em outra parte. (Pesa o terceiro saco) Também dois e meio."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Poxa, Seu Berrão. Olha aí. Falta só um pouco pra três quilos."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Será que toda a mão vou ter que explicar o negócio do arredonda?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não... é..."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então não torra as minhas idéias. Se começar a me aporrinhar, te risco da lista. Coco - Me desculpe, falei por falar."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Veja lá. Em boca fechada não entra mosquito. Deu oito quilos bem pesados. Dois reais por quilo, dá dezesseis. Desconta a gasolina do caminhão, a minha parte e os institutos, tenho que te dar seis reais."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Sempre foi meio a meio."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Até ontem. Agora a gasolina subiu. Se não quiser fazer acerto comigo, leva direto pra fábrica. Mas já vou avisando, e é bom que todo mundo escute. Tenho um acerto com os caras lá da fábrica. Dou sempre um come-quieto pro sujeito que compra o papel. Se falar pra ele não comprar de alguém, ele não compra mesmo. Assim, me cubro das sacanagens. Agora, sua cabeça é seu guia. Quer ir lá vender, vai."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não. Sempre fiz acerto com o senhor."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então pega o tutu e cai fora. Já enjoei da tua fuça."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Tem coisa minha aí. (Vai pegar o saco)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Ei, que tu quer aí? Tira a pata desse saco."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Só vou apanhar uma coisa."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Pega logo e se afasta dos sacos. Não quero ver ninguém aí. (Coco retira uma boneca quebrada de dentro do saco)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Que porcaria é essa?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Uma bonequinha. (Todos riem)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Pra que tu quer essa droga?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Pra mim."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Vai brincar com boneca agora? (Todos riem)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Por isso que esse país não vai pra frente. Ninguém quer saber de nada com o pesado. Esse puta marmanjo deu agora pra brincar com boneca. (Todos riem)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "É o fim da picada. Vem outro!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Cronometrado, Berrão. Cinco horas de coleta, três de separo, duas de amarra. Eficiência."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Se fosse assim, tu já era patrão."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Quatro e.... Quatro e meio pagos se tu me deixar o fio."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Fio é outra tabela. Não mistura preço que mistura amizade."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Amizade não cabe na balança. Fio vale mais que papel, mas menos que tua pressa. Fecha em cinco redondo com o cobre junto."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Fecha. Mas marca aí que eu tô aprendendo tua matemática."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Minha matemática é a do peso. Quem pesa mente menos que gente. Próximo!"
+          }
+        ]
+      },
+      {
+        "cena": "II",
+        "falas": [
+          {
+            "personagem": null,
+            "fala": "(Aproxima-se",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": null,
+            "fala": "Chicona) Chicona -      Só dois.",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Porra! Ninguém quer mais nada?"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Foi noite ruim."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Sei! Tu ficou em algum boteco enchendo a caveira de pinga. Isso que foi."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Foi noite ruim pra todo mundo. Pode perguntar pro povo."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Foi ruim mesmo, Seu Berrão."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Parece até que alguém catou antes da gente."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Nós, que é de catar cinco, catou só dois."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Vai ver que deu uma dor de barriga de lascar e a gentarada usou todo o papel. (Todos riem)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Bravo) Ei, que folga é essa? (Silêncio imediato)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Quero respeito aqui. Não sou nenhum moleque pra escutar gracinha. Quem se fizer de besta comigo, já viu! Sou muito legal. Agora, quando me esquento, viro bicho."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Isso a gente sabe, seu Berrão."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "É que não deu mesmo pra catar mais. Se desse, a gente catava. No duro que parece que alguém catou antes de nós."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Catou uma pinóia! Tu e essa gente são tudo uns vadios."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Vadio, não!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Vadio, sim! E tu é a pior! Mas, estou de olho em ti. Dá uma sopa pro azar e tu vê. Acerto teu passo. Quero ver amanhã, se tu me aparece só com dois sacos. (Pesa os sacos da Chicona) O primeiro tem quilo e meio e o segundo tem dois."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Mas eu passei na venda do Seu Quim, antes de vir pra cá. Deu cinco quilos."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Atira os sacos na cara de Chicona) Tá aí! Vai vender pro Seu Quim."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Ele não compra."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então se dane. (Chicona fica parada, olhando Berrão)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Cai fora, anda!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Compra aí, Seu Berrão. Estou dura."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Aqui é três quilos."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Três e meio, o senhor falou."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Falei três."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Escutei bem. O senhor disse três e meio."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Falei três, e não vou pesar de novo só pra tirar a sua cisma."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Todo mundo ouviu o senhor falar três e meio."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Eu não escutei nada."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Nem eu."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Eu estou por fora. Negócio dos outros, não quero nem saber."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "É melhor, se a gente mete a butuca vão dizer que a gente tá secando."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Mas tu ouviu eu falar três, não ouviu, Noca?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Foi três e meio que ele falou, não foi?"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Disse três. Só falei o que escutei e porque fiu perguntada."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "É três mesmo. Pega a grana e te arranca. (Chicona pega o dinheiro e os dois sacos vazios e se afasta)"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Quem manda falar demais, Chicona?"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Cala a boca pra não sobrar pra você."
+          }
+        ]
+      },
+      {
+        "cena": "III",
+        "falas": [
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Aqui sobra pra todo mundo, mesmo de boca fechada."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Não sou surdo não, viu Zé Miúdo? Aproveita seu nome, e fica bem na miúda ai... Pra o negócio não sobrar e ficar bem feio para o seu lado!"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Tõ de boa aqui seu Berrão, só esperando minha vez, pra pesar os meus. Tô de boa aqui."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então, anda logo. E já aproveita que chegou sua vez!."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Tá aqui, patrão. Caprichei na varredura do beco. Até jornal encharcado eu trouxe."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Papel molhado pesa que nem mentira de político. Mas quando seca vira nada. Tu sabe disso, não sabe?"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Sei, sim. Mas fome pesa igual, patrão."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Três quilos e um quebrado. E como quebrado não enche bolso... Três quilos."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Três não dá pra atravessar a semana, patrão!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Semana atravessa quem tem perna. Tu tem duas. Vai buscar mais. E não encharca o saco pra me fazer de besta."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Besta... Besta é a gente que fica aqui dependendo de você!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Não resmunga! Vem outro. (Aproximam-se Maria-Vai e Tião)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Pra que vem dois? Tu sai de lado. Deixa tua mulher cuidar das coisas. Ela entende melhor do que tu."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Fica os dois. Os dois que catou."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Te arranca, Tião. Seu Berrão já falou."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Cala a boca, mulher. Sei o que faço. Berrão      (Empurra Tião pra longe) Deixa só ela aqui! Tem medo que eu cante tua mulher?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Onda dele, Seu Berrão. Ele não é de nada. (Tião afasta-se triste)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Pesando os sacos) Tudo junto dá seis quilos."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Pouco."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Quer ir na fábrica conferir, como no outro dia?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "(Sem jeito) Vou."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então tu vai. Tião, tua mulher não confia na balança. Diz que estou roubando. Pra tirar a cisma dela, vou levar ela comigo lá na fábrica."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Eu vou junto."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu não vai a parte nenhuma."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Então a Maria também não vai."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Vou! Quero saber o certo."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Não vai."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Vou! Tu não me manda."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Não vai!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Ela vai! Se ela não for, te tiro o ponto. Não vou querer lidar com gente que acha que eu estou metendo a mão. Pombas! Hoje que eu estou de boa lua, que vou dar uma colher de chá para ela ir saber lá na fábrica como é o macete, tu vai se invocar? Ela vai. Se tu espernear, te tomo o ponto e dou pra outro."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Deixa de ser chato, Tião. (Tião afasta-se triste)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu fica lá junto dos sacos. (Maria-Vai fica perto da pilha de sacos) Próximo!"
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Só isso por hoje. Noite foi ruim. Peguei jornal de bar, guardanapo limpo, cardápio."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Guardanapo não entra. Cardápio é meio molhado. Tu tá me trazendo resto de mesa."
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Resto de mesa é o que sobrou pra mim também."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Dois e pouco. Dois."
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Dois Não dá pra nada Berrão!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Pensasse nisso na hora da preguiça... Porque nessa hora, você esqueceu de tudo e parou de catar papel?"
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Foi noite ruim, se Berrão! Já disse!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então para de repetir a mesma ladainha! Próximo!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Dois sacos."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Até que pro seu tamanho, pegou muito. (Pesa) Quatro quilos e meio, os dois."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Mas pro meu bolso é pouco, seu Berrão."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então se vira. Dona Jú - Berrão, meu filho, pesa os meus, mas pesa isso aqui com carinho. São as memórias do bairro. Carta velha, caderno de menino, até programa de cinema."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Memória não paga conta, Dona Ju. Mas papel, paga pouco."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Quatro e meio. Redondo pra quatro."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Redondo pra quatro por quê, meu filho? Esse meio quilo é a reza do mês."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Reza não compra café. Mas café precisa de água quente. Hoje eu tô frio. Quatro quilos."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Deus te veja, Berrão."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Deus me vê, mas quem me cobra é o dono do galpão."
+          }
+        ]
+      },
+      {
+        "cena": "IV",
+        "falas": [
+          {
+            "personagem": "Berrão",
+            "fala": "Anda, gente. Vamos logo com essa zorra! (Noca aproxima-se)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Dois sacos. (Pesa) Cinco quilos."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Vai levar a perebenta pra conferir?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu vai amanhã."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Deus me livre! Tu quer passar doença dessa vaca pra mim?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tá com ciúmes, biscatinha? (Noca pega o dinheiro) Mais alguém?"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Só um. O senhor sabe que tenho minhas dificuldades."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Sei sua preguiça, isso sim."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Pro senhor é fácil falar. O trabalho é nosso, mas o dinheiro que é bom, é só no seu bolso."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Acho bom você ficar bem caladinha. Bora Carcará!"
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Trouxe fino, chefia. Revista boa, couché, catálogo de loja. Peso nobre."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Couche dá mais quilo, menos volume. Mas a firma paga por quilo, não por conversa."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Cinco. Esse vale. O outro?"
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Misturei um tanto de papelão pra rechear."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Três e meio. Sete bem pagos."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Tá me tirando, Berrão? Tô no batente desde a madrugada."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Madrugada é hora do ladrão, não do papel. Se quer mais, separa direito. Mistura barata o preço de tudo."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Oito e meio,e tu quer me pagar sete? Ta maluco?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu briga comigo e perde o gancho. Briga com a rua e perde os dentes. Escolhe. (Silêncio curto. Carcará recolhe os sacos vazios, sem olhar pra trás.)"
+          }
+        ]
+      },
+      {
+        "cena": "V",
+        "falas": [
+          {
+            "personagem": "Berrão",
+            "fala": "Quem está faltando?"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "O Bichado e a Poquinha."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Que merda! Será que aqueles dois não sabem que eu não estou aqui pra perder tempo? Têm a noite inteira pra se virar, mas ficam dormindo. Daí se atrasam. Também, tem um negócio. Se me chegarem aqui com as mãos vazias, vão entrar bem. Não compro nada. (Pausa. Berrão anda nervosamente de um lado pra outro. O pessoal está agachado. Todos em silêncio. Chicona, sem que Berrão perceba, aproxima-se de Tião)."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tu vai deixar ele levar outra vez tua mulher?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "É só pra conferir."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Tu vai engolir isso?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "É bom alguém daqui ir conferir."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Então por que ele não te leva? Porque tu é feio que nem a peste. Leva a Maria, que é fêmea."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Que tu quer dizer com isso?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Que ele vai se servir da tua mulher. Teu chifre vai crescer um pouco mais."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Filha-da-puta!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Banca o homem pra cima do Berrão."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Tu me dá nojo."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "E tua mulher? Essa vaca sem-vergonha que te passa pra trás na tua cara?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Ela também me paga."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Papo furado."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Ninguém vai perder por esperar."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tu não é de nada. Quem tem que fazer o azar faz na hora. Esse negócio de ficar nas encolhas é negócio de trouxa."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "O bom cabrito não berra."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "O chifre tu já tem. Só que em vez de cabrito parece um bode."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Te arranca daqui (Dá um pontapé em Chicona) Vai dar palpite na vida da peste que te pariu!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Não precisa azedar. Só estou querendo te dar uma mão."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Quer ajudar, e a gente que leva."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Que mão! Vocês só sabe me azucrinar."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Quem azucrina sua vida não somos nós, não. É tua mulher mais esse Berrão. Ele que te desgraça. É ele. E não é só contigo que o merda se invoca. É com todo o mundo. Vive sacaneando a gente."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Se não é só comigo, tá aí. Por que ninguém estrila? (Pausa. Chicona sente a aproximação de Berrão, disfarça. Quando Berrão se afasta, Chicona volta a falar)"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Esse cara há de morrer leproso."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Gente ruim não morre."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tu podia acabar com ele, Tião."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Tu não viu a razão pendurada na barriga dele?"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "É... Ele é a lei. Pau mais forte."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Não adianta a gente apitar. Temos que esperar a volta."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Nós devíamos armar um chaveco pra ele."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Não dá."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Podemos forçar a barra."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "É bobagem. O Berrão é uma parada federal."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Como tá, não tá direito."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Não tá mesmo!"
+          }
+        ]
+      },
+      {
+        "cena": "VI",
+        "falas": [
+          {
+            "personagem": "Berrão",
+            "fala": "E esses desgraçados não chegam. Quero ser mico de circo se não pegar de pau esse Bichado."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Deixa eles no ora-veja. Vamos nós."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Se tu mais essa corja não fossem uns vagabundos, podia ir. Mas, como vou aparecer lá na fábrica com esse pingo de papel? Os caras vão cair no meu pelo. Essa porcaria não paga nem a gasolina. Mas, esses dois vão ter um acerto comigo. Pode botar fé. (Berrão continua a andar nervosamente de um lado para outro)"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tu escutou?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "A Maria tá assanhada, né? Mas, quando ela voltar, tu vai ver. Arrebento essa vaca."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Psiu! (Pausa) Não falei da Maria, não. Tu não escutou o Berrão se queixar que é pouco papel?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "E daí? O miserável sempre quer mais."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "E é aí que ele pode cair do burro."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Não sei porquê."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Sei eu. É só a gente encostar o corpo que ele se ferra. Se ninguém catar papel pra ele, quero ver o que o sacana vai dizer na fábrica."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Precisava ser todo mundo junto nessa jogada."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Claro! (Pausa. Os quatro pensam)"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Tu já falou com os outros?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Ainda não. Mas, se a gente fala, eles entram nessa."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Pode crer. Todo mundo tem bronca desse filho-da-puta do Berrão."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Isso é mesmo. Fala com o pessoal, se eles entrarem no arrocho, eu também entro."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Não. Tem que ser tu o cara a levantar a lebre."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "É ideia tua e vocês duas concordam!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Poxa, mas tu tem mais papo que a gente."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Te manjo. Tu sabe enrolar. Vai lá falar com os outros. Daí me avisa."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tem que ter a tua força."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Vai ter. Mas só depois que estiverem todos bem papeados."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Tu tá com medo."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Claro. E vocês também."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Eu estou firme."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Eu também"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Eu também"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "E querem tirar o cu da reta?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Não! Nós não falamos com tu?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Sim! Agora vai lá e fala com os outros."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Mas, que é isso? Se abre com eles. Tu sempre esteve na boa com esse povo."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "O lance é teu. Te vira. Se junta com essas duas e se vira!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Meu, não. De todo mundo."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Mas a ideia é toda de vocês."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Mas tu tem mais motivo que a gente de querer ferrar o Berrão."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Não sei porquê. Ele mete a mão no teu bolso como no meu. Pequena        Mas ele passa a tua mulher nas armas. -"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Corta esse papo."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Mas não é?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Isso é comigo. Tu não te mete."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Filha-da-puta! Eu te arrebento! (Tião pula em Pequena, as outras o seguram)"
+          }
+        ]
+      },
+      {
+        "cena": "VII",
+        "falas": [
+          {
+            "personagem": "Noca",
+            "fala": "Briga!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Dá-lhe! Dá-lhe! Quem puder mais chora menos."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Ninguém se mete. Soltem ele! (Pequena e Tonha se afastam, Chicona segura Tião com um mata-leão)"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Dá-lhe, Tião! Dá nela, Tião!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "(Sufocando) Ai... Ai..."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Esse Tião é mole demais mesmo!’"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Falei que não é de nada!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Geme, corno manso! Geme!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Mas é muito manso mesmo... Levanta daí! Reaje! Hahahahah!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Me larga... Me larga... Ela me... mata... Me... ajuda..."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ela vai matar o Tião. Não deixa, Seu Berrão. Não deixa!"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Até parece que a Maria se preocupa com o Tião."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Vive se assanhando em cima de todo mundo... agora: Ai... Não deixa seu Berrão..."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "É uma vaca mesmo!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Esse sacana vai se acabar aqui."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Mixou! (Puxa Tião dos braços de Chicona)"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Ele quis. Deixa comigo!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Mixou, já disse! Se quiser encrenca, é pra mim agora. (Puxa o revólver) Vai querer?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "(Levantando-se, gemendo) Tu me paga, sua filha-da-puta!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "A hora que tu quiser."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "É isso aí Chicona!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Fica na sua, Pequena. Deixa comigo!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Já mandei acabar esse assunto. Já estou de ovo virado porque aqueles dois não aparecem. Se me torram o saco, acerto um. (Pausa)"
+          }
+        ]
+      },
+      {
+        "cena": "VIII",
+        "falas": [
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Por que tu brigou com ela?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Ainda pergunta?... Sua vaca!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Eu que pago o pato?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Foi por tua causa. Se tu não fosse tão galinha, eu não tinha que escutar desaforo."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Mas que é isso? Que é que eu fiz?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Não tem nada que ir na fábrica."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Só vou lá conferir o peso. Tião -Mas todo mundo fica falando que o Berrão te passa na cara."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Quem falou isso? As três ali?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Foi. E a Pequena botando pilha!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Filha-da-puta! Nojenta! Vai ter que provar!"
+          }
+        ]
+      },
+      {
+        "cena": "IX",
+        "falas": [
+          {
+            "personagem": null,
+            "fala": "(Maria-Vai joga um objeto em Pequena)",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Que tu tem que se meter na minha vida, sua lazarenta?"
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Ficou louca, Maria?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Essa Cadela! Não sabe arrumar mulher no papo, fica costurando a vida delas.."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Cala a boca!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Tu vai provar o que disse de mim."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Deixa isso pra lá, Maria."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Vai mexer com alguém do seu tamanho Maria, esquece isso! Você nem ta nem ai para o Tião!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Perde tempo com isso não Maria, vem perder tempo aqui comigo, vem. Maria – Vai – Cala boca Tom! Meu negócio é com essa biscate!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Que foi?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "O que vc ta falando aí? Que o Berrão se trata comigo."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Vai à merda! Todo mundo sabe disso."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "O senhor escutou isso, Seu Berrão?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Que está um pouco afastado) Mas, pombas, o que é agora?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Essa desgraçada falou que o senhor me leva no caminhão pra trepar comigo."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu disse isso?"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Eu, não!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Disse sim! Não dá pra trás, não!"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Falou nada, não."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Cala a boca, Maria. A Pequena não disse nada."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Então por que o Tião queria brigar? Você vive defendendo essa daí."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Era por isso, Tião?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Era sim."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Fui eu que disse Seu Berrão!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Puxando o revólver) Sua vaca! Te meto uma bala na testa, sua sacana de merda! Que tu quer comigo? Diz! (Pausa) Tu não é brava? Então, por que precisa de bicha pra te defender?! O que quer comigo?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Nada, não. Eu não quero nada!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Nojenta! Na hora de provar, afina."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Vou te dar um castigo! Sai da frente pra não levar também. (Dá vários tapas na cara de Chicona, joga-a no chão e lhe dá pontapés) Quer mais? Diz! Quer mais?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Não! Por favor, chega!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Eu sei porque elas se metem na minha vida. Quiseram chamego comigo e eu não me acertei com elas. É isso. Só pode ser isso."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Eu, não! Eu nunca te cantei."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Porca, sem-vergonha! Dando em cima de mulher que já tem homem. (Dá mais uns pontapés em Chicona)"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Essa eu não sabia. Tu me paga."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Eu devia te tomar o ponto."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "A rua é livre. Cato papel onde quiser."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "E limpa o rabo com ele. E se eu não comprar de você? Vai vender pra quem?"
+          }
+        ]
+      },
+      {
+        "cena": "X",
+        "falas": [
+          {
+            "personagem": "Noca",
+            "fala": "Dá pra nós o ponto dela, Seu Berrão. Eu cato numa rua, o Bichado na outra."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ela mais o Bichado não dão conta nem do ponto que têm. Dá pra gente, Seu Berrão."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Puta invejosa!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Não se mete comigo!"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Então não se atravessa no meu caminho."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Quem se meteu foi tu. Ninguém te chamou na conversa."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Calem a boca! Seu Berrão, dá o ponto pra mim!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "- Essa é boa! Quer parar meu negócio Tonha? NOCA:- Ponto parado é dinheiro jogado fora. BERRÃO:- Dinheiro meu. ZÉ MIÚDO:- Se tirar o ponto da Chicona, passa pra cá. CARCARÁ:- Pra você? Cê vive escondendo serviço. ZÉ MIÚDO:- Escondo porque tem bobo que faz por mim."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Fala isso de novo."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Por que? Tá surdo?"
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Ih… lá vem."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "- Deixa. Se os dois se quebrarem, sobra serviço."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Chega de zona aqui! Aqui eu não pago pra ver homem bancar galo."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Nem paga direito."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "O quê?"
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Nada. Tava pensando alto. (Um silêncio pesado.)"
+          }
+        ]
+      },
+      {
+        "cena": "XI",
+        "falas": [
+          {
+            "personagem": null,
+            "fala": "(Entram Frido, Gá e Nhanha)",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Ei pessoal! Olha só o que chegou. Cara novas!"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Catando papel, sem ordem do Seu Berrão."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Pegaram seis sacos. (Ficam todos amontoados olhando Frido, Nhanha e Gá. A menina agarra-se nas saias de Nhanha, que também está meio assustada. Pausa longa)"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Foi eles que cataram nos pontos da gente."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Por isso que a gente não catou o de sempre."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Poxa, bem que a gente desconfiou."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Os sacos deles é da gente."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "É de quem pegar. (Todos se precipitam sobre os três novos. Frido e Nhanha tentam impedir, são derrubados, Gá grita. Reina grande confusão. Os catadores velhos pegam os sacos e disputam entre si com grande violência. Frido e Nhanha tentam recuperar os sacos, mas são repelidos. Berrão diverte-se)"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Larga essa droga!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Esse saco é meu, sua desgraçada!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Solta aí, seu trouxa!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Agarra outro, paspalho! Esse é meu!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Cai fora, miserável!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Por favor gente, esses sacos são meus."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Larga dá, moça."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Te arranca, pantera!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Cai fora, peste. Não gosto de mulher!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Já disse que esse saco é meu."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Eu que catei ele."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "E daí? Vai encarar?"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Agarrando-se em Nhanha) Nhanha... Nhanha..."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Espera, Gá! Deixa eu solta! Deixa eu! Eles querem roubar o papel da gente!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Nhanha... Nhanha..."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Me solta, peste! (Empurra Gá longe)"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Aqui ninguém rouba nada, não. Entendeu?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Então larga os sacos da gente, moça. Deixa a gente em paz."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Que saco teu? Tu não tem nada aqui."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Chora nervosa) Nhanha! Gá quer Nhanha! Nhanha!"
+          }
+        ]
+      },
+      {
+        "cena": "XII",
+        "falas": [
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Vai cuidar da tua cria! Vai à puta que te pariu, mas te larga daqui."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Ou prefere levar umas porradas?"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Nhanha! Nhanha!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Cuida da Gá, Nhanha! Cuida dela!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Essa gente tá roubando nós."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Deixa comigo. A Gá vai ter um ataque. (Nhanha não sabe o que fazer, Gá começa a ter um ataque histérico)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Êta gente esganada. (Ri)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Por favor, me ajuda!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Aqui é cada um pra si e Deus contra ."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Larga daí, seu peste!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Que é, vai roncar grosso?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Larga desse saco!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "E se não largar?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Esse saco é meu!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Era. Agora é meu."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tu aqui não tem vez."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Pega a reta, otário. É o único jeito de livrar a tua cara. (Gá está no auge do ataque)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "(Atendendo Gá) Por favor, me acuda, gente. Minha Gá vai morrer. Vai morrer!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Precisa de água. Ajuda, gente! Ficam com os sacos, mas ajuda!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Só faltava essa. (Todos rodeiam Gá. Coco traz uma vasilha com água)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Gá! Gá! Minha Gá! (Berrando) Ela morreu! Minha filha morreu!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Não morreu, não. Ela não morreu, Nhanha. É sempre assim."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Dessa vez morreu! Ai, meu Deus! Minha Gá! Minha Gá morreu! (Todos ajoelham-se e começam a rezar. Os únicos que ficam de pé são Berrão e Coco, que segura a vasilha com água. Nhanha chora, debruçada em cima de Gá)"
+          },
+          {
+            "personagem": "Todos",
+            "fala": "Pai nosso que está no céu… (No meio da prece, Berrão avança até Gá)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Gritando) Parem com essa droga! (Todos param de estalo. Murmúrio geral)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "É minha filha. Ela está morta!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Arreda daí, mulher!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "O que vai fazer?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Olha pra ver. Chega aqui, Coco. (Arranca a vasilha de água das mãos de Coco e joga água no rosto de Gá, que se mexe na hora.Todos murmuram)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Está viva! Está viva! Graças a Deus! (Todos vão se levantando, alguns se benzem. Estão contentes)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Obrigado. Muito obrigado."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Deixa pra lá."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Boa, Seu Berrão!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Eu sei das coisas."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Viva o seu Berrão!"
+          },
+          {
+            "personagem": "Todos",
+            "fala": "Viva! Viva!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Esse negócio merece uma cachaça, e da boa."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Estamos aí!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Quem vai entrar na vaquinha?"
+          },
+          {
+            "personagem": "Todos",
+            "fala": "(Gritando, vão dando dinheiro ao Coco) Tou aí! Vou nessa! Olha eu! Boa! Boa! Vamos molhar a goela!"
+          }
+        ]
+      },
+      {
+        "cena": "XIII",
+        "falas": [
+          {
+            "personagem": "Maria-Vai",
+            "fala": "E eu que ainda tenho que ir na fábrica!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Vai a lugar nenhum!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Te levo amanhã. Hoje já estou atrasado."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Fica com nós, Seu Berrão. Vai ser farra grossa."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Outra vez."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Fica hoje, Seu Berrão. O senhor salvou a menina."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Coisa à toa."
+          },
+          {
+            "personagem": "Todos",
+            "fala": "Fica, Seu Berrão! Fica"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Não dá. Se desse, ficava de gosto. Mas não dá."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Então, obrigada."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Olha Nhanha de cima embaixo) Tu fica me devendo favor, mulher."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "(Encabulada) Não sei como pagar."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Sei eu. Pode deixar que chega a hora."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Que Deus lhe pague, meu senhor."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Nada de botar na conta de Deus. Se tem que pagar, paga aqui mesmo."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Vamos ver. Agora, vamos fazer os acertos dos sacos... Não tem acerto não, é tudo meu!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Ô, tu aí!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Eu, senhor?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu quer ser catador de papel?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "É só o que sei fazer."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tá danado. Que tu fazia antes?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "A gente era de tratar a terra."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Trabalhava na roça?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Capinava. Limpava as terras."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Saiu de lá por que?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Ganhava pouco. Não dava pra nada. E a gente queria vir para a cidade grande cuidar de arranjar um doutor pra menina. Nós foi sair no Rio. Lá a gente catou papel."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "A gente escutou o povo dizer que aqui dá mais. Nós viemos. Chegamos hoje."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Irônico) Aqui é só trabalhar que ficam rico."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Basta poder ajuntar algum pra levar a Gá no doutor e a gente volta pra terra da gente."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu é de trabalhar?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Trabalho não me mete medo, não senhor. Nem em Nhanha. Ela também trabalha com homem. Pode levar fé na gente."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Vamos ver. Coco!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Eu?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Essa gente vai catar no teu ponto. Junto com tu. Vai achar ruim?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Eu, não. Pode catar. Eles precisam."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu não gosta de trabalhar mesmo. Bem, o pessoal te põe dentro do macete. Pega esse dinheiro. Depois a gente desconta."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Obrigado."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Agora ajuda a botar os sacos no caminhão. (Todos pegam os sacos e saem acompanhados de Berrão, que não leva saco nenhum. Só ficam em cena Gá e Coco. Coco espia pra ver se o pessoal se afastou mesmo, depois aproxima-se de Gá. Coco tira a boneca do bolso e a mostra pra menina)"
+          }
+        ]
+      },
+      {
+        "cena": "XIV",
+        "falas": [
+          {
+            "personagem": "Coco",
+            "fala": "Olha!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Dá pra Gá."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Tu quer a bonequinha?"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Quer. Gá quer."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Mas é do Coco. (Ri)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Dá pra Gá! Gá quer!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Se tu quer, eu te dou."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Alegre) Dá! Dá! (Tenta pegar)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Tira a boneca) Não hoje. Outro dia. O Coco te dá, mas tu tem que agradar o Coco."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Dá!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Vou dar! Vou dar! Mas não vai ser hoje. O povo só foi até o caminhão. (Olha pra ver se não vem ninguém) Outro dia que tu e Coco ficarem sozinhos, tu ajuda o Coco e ele te dá."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Dá pra Gá! Gá quer! Dá!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Agora não! Agora não!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Dá! Dá!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Hoje não! Hoje não dá. Eles vêm aí! (Coco afasta-se rapidamente. Entram todos os que saíram, menos Berrão)"
+          }
+        ]
+      },
+      {
+        "cena": "XV",
+        "falas": [
+          {
+            "personagem": "Chicona",
+            "fala": "Tomara que esse desgraçado encontre um poste no caminho."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Vai ser bem feito."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "O diabo que o carregue."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Filho da puta!"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Um desgraçado!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Unha de fome!"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Morfético! Nojento!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Cara ruim de doer. E a bruxa não esbarra nele."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Nasceu de bunda pra lua."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Onde será que esse desgraçado arranjou esse caminhão?"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Só pode ter sido entre as pernas da mulher dele. Aquela galinha é que arranja as molezas pra ele. Ela deve dar pro dono da fábrica."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tem cara de corno manso."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Fedorento! (Para Nhanha) Não te fia na bondade dele, não. Ele é a peste."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Ele foi bom pra gente."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ele só jogou água na cara da menina."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Nossa reza é que valeu pra ela."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Estou agradecida a todos."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Não foi nada, não."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "E a menina está melhor?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Agora está."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Graças a Deus! Tadinha..."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Ela sempre tem isso?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Só quando se assusta."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "A gente não sabia."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Já passou. Agora temos que juntar dinheiro pra levar ela no doutor."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Doutor é atraso de vida."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Só serve pra comer dinheiro da gente!"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "São todos uns enganadores."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Mas a menina precisa. Que se há de fazer?"
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Podia levar no hospital do Governo. Lá é de graça. É pros pobres."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Lá é que matam a menina de vez. Tu não lembra quando o Berrão atirou no Zé Catinga? Levaram ele no hospital do Governo. Demoraram tanto que ele morreu. Só queriam saber quem atirou nele. Botar remédio que é bom, nada."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "O melhor é mandar benzer. Tu acredita em reza?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Escutei dizer que é bom."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "A gente conhece Dona Chica Benzedeira. A gente pode mandar ela vir rezar na menina."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Ela cobra caro?"
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Coisa pouca. Só as velas, a cachaça e a comida do santo. Mas tira qualquer encosto."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Então quando a gente puder a gente manda ela."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Isso é encosto. Só pode ser."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Cala a boca!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Ela só quer ajudar!"
+          }
+        ]
+      },
+      {
+        "cena": "XVI",
+        "falas": [
+          {
+            "personagem": "Tom",
+            "fala": "E esse Coco que não vem com a pinga? Vai ver que se chapou sozinho."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Não... Ele não é besta de fazer uma dessa. A gente foi é trouxa em largar a grana na mão dele."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "O moço me pareceu gente boa. Se falou que vem, é que vem. Às vezes demora."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Foi bom tu abrir o bico. Vou te dar o serviço certinho desse Berrão."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Parece bom homem."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Não vale a comida que come. É um filho-da-puta. Tu vai ver."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Outra coisa! Tu abre o olho. Não deixa ele se chegar muito pra junto da tua mulher, se não ele te desgraça."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Era iso mesmo que eu ia te falar."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Que é isso gente! Nhanha é mulher direita."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "E ele quer saber lá disso?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Ela é mulher de um homem só!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Quem avisa amigo é. Te cuida."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Se alguém faltar com o respeito com Nhanha, eu mato."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Todo mundo diz isso quando chega. Depois, o Berrão caga e pisa em cima."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Falei tá falado, moça."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tá avisado. (Entra Coco)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Olha a pinga, gente!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Demorou, peste."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Fui buscar longe."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Abre logo essa malvada."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Ói nós aqui."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Mulher também é filha de Deus."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Vamos encher o caco."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Êta pinga boa. Faz roda povo. (Entram Bichado e Poquinha)"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Olha quem chegou!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Berrão tá ferrado com vocês, por que não trouxeram nada hoje!"
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Não catamos nada! Não podia dar as caras com ele aqui."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Mas ouvimos o caminhão saindo e corremos para não perder a cachaça!"
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Hum... Gente nova no pedaço!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "É o Frido e a Nhanha!"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Aquela lá é a Gá."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Bora encher o caneco que tem mais gente pra festejar! (Todos juntam-se. As garrafas vão passando de mão em mão. Todos bebem em silêncio, menos Nhanha, que fica com Gá. Estão todos tristes e pensativos. Ficam muito tempo em silêncio, bebendo. Coco sai da roda e fica olhando Gá, que dorme. Tira a boneca do bolso e começa a acariciá-la) FIM DO PRIMEIRO ATO"
+          }
+        ]
+      }
+    ],
+    "SEGUNDO ATO": [
+      {
+        "cena": "XVII",
+        "falas": [
+          {
+            "personagem": null,
+            "fala": "(Ao abrir o pano, todos estão jogados pelos cantos, dormindo. As garrafas vazias estão",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": null,
+            "fala": "espalhadas pelo palco. Nhanha acorda, olha o céu, o Sol lhe as vistas. Nhanha sacode Frido)",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Acorda, Frido."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Que é?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "O Sol já está alto. Levanta, homem."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Deixa eu dormir."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Acorda, Frido. (Sacode Frido) Levanta, homem de Deus! Levanta!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "(Sentando-se) Hein?... Que é?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Se mexe, homem. O dia já vai longe."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Minha cabeça... como dói!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Quem mandou beber?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Não ia fazer desfeita pro pessoal logo no primeiro dia aqui. Não conheço ninguém. Eles podiam arreparar."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Eu não gostei dessa gente. E tu?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Sei lá. (Passa a mão na cabeça) Sei que não estou bem."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Molha a cara que melhora."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "É. Mas, onde?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Não sei."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Essa cabeça está uma lasqueira. Parece que vai arrebentar. Vou descansar mais um pouco. (Deita- se)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Levanta, Frido. A gente tem que saber da vida. Precisamos arrumar dinheiro. Nós tem que cuidar de Gá. A pobrezinha tem cada vez mais esse negócio ruim. Levanta, homem! Levanta! É preciso sacudir o corpo!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Eu sei! (Senta-se) Eu sei! Oh, vida!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "A gente não pode reclamar. Tu bebeu, não tem costume, paciência. Mas tem que dar duro. A Gá precisa de doutor. E com ela sarada, a gente volta pra nossa terra. Isso aqui é muito bom, mas não presta pra nós."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Todo lugar é igual. Ai, minha cabeça, como dói. Me dói tudo. Parece que apanhei de rabo de tatu."
+          }
+        ]
+      },
+      {
+        "cena": "XVIII",
+        "falas": [
+          {
+            "personagem": "Maria-Vai",
+            "fala": "(Que há algum tempo estava acordada assistindo à cena) Está de ressaca, parceiro? (Ri)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Estou bem ruim."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Com o tempo acostuma."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Deus queira que não. Frido nunca foi de beber. Só bebeu ontem pra não desfeitear ninguém. A gente é nova aqui, alguém podia arreparar."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Um fogo nunca matou ninguém. Nós, todas as noites, enchemos a cara de cachaça. É o jeito. A vida é uma merda mesmo. Só com cachaça a gente escora."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "A senhora é só com Seu Tião. Mas nós tem que pensar na Gá. Ela precisa de doutor. Deus me livre que Frido mais eu falte. Que vai ser dela largada nesse mundão?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Se sossega. Quem morre na véspera é peru. Nós dá jeito nela. A gente chama Dona Chica. Ela, com reza, bota essa menina boa."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "A gente agradece. Mas também quer saber de doutor."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "(Tenta ficar em pé) Ai, está tudo rodando!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "(Rindo) Amarrou um fogo de gente, hein? Tá que não pode com o cadáver!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "(Envergonhado) Falta de costume. (Senta-se)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Tem jeito, Frido. Temos que ir."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Onde quer ir a essa hora?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Catar papel."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "(Rindo) Gente fominha! Isso lá é hora de se virar? Nós aqui só sai à tardinha. Antes é besteira. Não tá vendo o povo dormindo? Só vão acordar na hora de ir."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "É assim?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Gente mole."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ninguém está com a ganância pega. Nós sabe das coisas. Com trabalho ninguém se ajeita nessa merda de vida. Pra que dar duro? Pro Berrão ficar mais rico? Aqui ó? (Faz gesto)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Mas nós não vai esperar deitado a noite chegar. Não estamos acostumados."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Que mulher mendiguenta. Descansa e deixa o teu homem descansar. Não se agüenta nas pernas. Fica aí."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Acho que a dona tem razão."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Tu quer passar o dia inteiro como um bicho-preguiça?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Só hoje."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Não me dá gosto."
+          }
+        ]
+      },
+      {
+        "cena": "XIX",
+        "falas": [
+          {
+            "personagem": null,
+            "fala": "(Bichado e Poquinha acordando)",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Quem dorme com esse barulho!?"
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Vocês sempre acordam cedo assim?"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Porra! Não dá pra dormir com esse falatório todo!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Tá foda mesmo! Vocês não dormem não?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "(Acordando) Que puta falação é essa aí?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Esse povo queria catar papel desde já."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Estão loucos, gente?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Nós precisamos."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Todo mundo precisa."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Nós tem a menina."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "E daí? Vai dar jeito, um quilo a mais, um quilo a menos?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Um quilo hoje, outro amanhã..."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "De manhã não dá?"
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Sempre dá."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Então a gente vai."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Vai, o cacete!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Como é que é?!?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Que de manhã ninguém sai catando porra nenhuma!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "E por que não?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Porque eu não vou deixar. E pra seu governo, é bom não se escamar comigo. Sei o que faço."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Se tu sai cedo, vai pegar uns dez sacos. Aí, o Berrão vai querer que a gente pegue igual a tu."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Mas nós precisamos. Nós tem a menina."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tu cala a boca. A conversa é de macho."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Escute aqui, seu moço. Nhanha é minha mulher, tem que ser respeitada."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Vai à merda! Tu e ela. Quem chega por último, tem que respeitar o que os outros fizer."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Tá falando demais."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "E daí?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Não gostei."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Coma menos. (Frido tenta ficar em pé, sente-se tonto, senta-se outra vez)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Ai, minha cabeça!"
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Tá podre e ainda quer bancar o valente! Logo com a Chicona, raça da peste? É tudo sabujo do manda-chuva."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Se o Frido estivesse bom, tu ia ver. Ele não é homem de aturar desaforo."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Papo furado. Não boto fé em cara que não sabe beber. Por isso é que teve essa filha endoidada da moléstia."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "A coitadinha não tem culpa de ser assim."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Disso sei eu. A culpa é desse frouxo."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Me respeita, ô!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Vai querer?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Espera eu melhorar."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Otário! Devia te arrebentar."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Deixa pra lá, Chicona."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "O Frido não está bom. Quando ele sarar, a dona fala com ele. Aí quero ver."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Vai ver! É só avisar que está no jeito. Boto ele outra vez de molho."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Esquece essa onda, Chica."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tu abre o olho. Se sair catando papel antes de nós, te estrepo."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Vai, vai puxar tua palha."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Logo agora que a gente está querendo dar um gelo no desgraçado do Berrão, esse aí vai querer furar a chapa catando mais?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Que gelo é esse que eu não sei?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "A gente está combinando de não catar nada uns dias. Só pra ver a cara do Berrão."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Se o Berrão sabe, come a alma de um."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Cagueta pra ele. Foi jogado do Tião."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Como ele não me disse nada?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Não se fia em ti."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Miserável! Ele me paga."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Não vai dizer que eu te falei."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Não sou de entregar ninguém."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Melhor pra ti. Agora, segura esses dois, pra eles não se assanharem. Se o Berrão se engraça com eles, tira o ponto de um de nós e dá pra eles. Nosso trunfo é todos juntos. (Deita-se)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Que pouca vergonha! Teve medo daquilo?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Não liga, não. Um dia é da caça, outro do pescador."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Mulher de homem nunca é desfeiteada."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Não estou bom, mulher!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Quem mandou beber? Tá aí. Vexaram a gente."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Vai ter troco."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Olha, desculpa a gente. Não estamos acostumados a comer enrolado, não. Nunca ninguém falou grosso assim com nós. Nem o capataz gritava com Frido. Ele sempre foi homem de se respeitar. Só que aqui foi acontecer isso. Porque ele bebeu e não está acostumado."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Cala a boca, Nhanha! Cala a boca! Já não chega eu estar no virador? Já não chega essa peste me destratar, tu também vai botar lenha na fogueira? Então tu não sabe o homem que tem?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Eu sei..."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Então fica calada! Tu acha que vou engolir tudo sem fazer nada? Espera eu sarar. Ela vai engolir cada um dos desaforos que me fez."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Não fica queimando a mufa à toa. Também não foi o fim do mundo. Pior foi comigo que o cachorro do Tião não me botou dentro da presepada que vão armar pro Berrão. Ele, sim, que vai me pagar. Vem molhar a cara, homem. Só assim tu fica bom. Vem, vou te levar na bica. (Maria pega Frido pela mão e sai com ele. Nhanha fica meio aflita, faz menção de sair. Gá acorda, chorando)"
+          }
+        ]
+      },
+      {
+        "cena": "XX",
+        "falas": [
+          {
+            "personagem": "Gá",
+            "fala": "Nhanha... Nhanha..."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Estou aqui, Gá."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Gá tá com fome, Nhanha."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Sei. (Apanha uma trouxa de roupa)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Gá tem fome, Nhanha."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Já vai, Gá! Já vai! (Tira da trouxa um pedaço de pão velho e dá pra Gá)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Pão bom, Nhanha! (Come com gula)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Come, Gá! Come! (Levanta-se e olha apreensiva para o lado em que Frido saiu)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Nhanha! Nhanha!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Estou aqui, Gá. Não vou longe. (Tião acorda)"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "(Olha em volta) Poxa, essa Maria já se mandou? (Procura algo para beber. Joga água no rosto. Grita) Maria! Maria! Onde tu se meteu?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Ela saiu, moço."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Onde ela foi? Não disse?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Foi mostrar a bica para o meu Frido, que não está bom."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Galinha desgraçada! Não pode ver macho, que já quer sair pra se roçar com ele. Vadia sem- vergonha! Hoje ela me paga."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Mas ela foi só levar o Frido na bica."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Eu manjo essa história de bica! Mas hoje pego essa puta na porrada. Frito ela."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Frido é um homem direito!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Não duvido. Mas a Maria é uma vaca descarada. Me larga dormindo pra andar com outro homem. Vagabunda! (Grita) Maria! Maria!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "(Fora de cena) Já vou, coisa ruim!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Tá pondo as calças? Vem, desgraçada de uma figa!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "(Fora de cena) Espera! Não vou fugir! (Tião procura um pedaço de pau. Acha um que lhe serve)"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Hoje ela vai se rebolar!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "O que o senhor vai fazer?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Vou fazer o cacete cantar."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Dona Maria não fez nada demais."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Deixa essa cadela pra mim. (Entram Maria-Vai e Frido, que vem com o rosto molhado)"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ainda está molhado. (Levanta a saia e enxuga o rosto de Frido) Pronto, está aí teu homem. Tá novinho outra vez."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Se apronta, sua vaca. Vai ganhar o teu!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Que é que eu fiz?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Muito engraçada! Sai com o cara e ainda pergunta?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Só fui mostrar a bica pra ele."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Nojenta!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "É verdade."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Tu não se mete. É melhor pra ti. Tu fez teu trabalho de homem. Mulher deu sopa, pegou e pronto. Tá certo assim. Agora, não põe o teu nariz em briga de casal, se não engrossa pro teu lado."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Mas não aconteceu nada."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Vai acontecer agora. Há muito que estou pra dar uma entortada nessa galinha."
+          }
+        ]
+      },
+      {
+        "cena": "XXI",
+        "falas": [
+          {
+            "personagem": null,
+            "fala": "(Tião agarra Maria-Vai pelo braço)",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Toma, cadela! Toma!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Porco! Nojento! Só faz valentia com mulher! Ai, ai, corno manso! Me solta!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Vagabunda! Você vai ter o que merece!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Me solta!!!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Isso não está direito!"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Não se mete! Isso é coisa deles. Vivem juntos porque querem."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "São brancos, que se entendam!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ai, ai! (Solta se e sai correndo para o lado em que está Gá, Tião vem atrás) Socorro! Socorro! (Gá, que já está assustada, começa a chorar e a gritar por Nhanha. Tenta levantar-se, mas Maria-Vai tropeça nela e as duas caem)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Olha a menina!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Nhanha! Nhanha! Maria – Vai – Me larga! (Tião segura os braços de Maria Vai que se levanta e quando ela fala, ele a solta novamente) (Nhanha tenta tirar Gá da confusão. Consegue. Gá tentase afastar e cai em cima de Chicona)"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Poxa, que zorra! (Levanta-se e empurra Gá com brutalidade)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Não, não! Nhanha! (Antes que Nhanha e Frido possam fazer alguma coisa, Coco agarra Chicona e a atira longe)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não toca na menina! Não toca! (Gá corre para junto de Nhanha e se abraça com ela. Todos estão olhando Coco, surpresos. Até Tião para de bater em Maria e espia)"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Que é, Coco? Tu acha que eu ia fazer maldade com a menina?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Se tu tocar nela, eu te mato!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Sou teu chapa. Não faço mal pra menina, não. Logo eu? (Coco afasta-se. Chicona fica em pé. Frido olha tudo pateticamente. Maria-Vai está jogada no chão gemendo)"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "(Para Frido) Abre o olho com esse cara. Cuida da tua menina. Ele não é certo da cachola."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Aproximando-se de Gá, que está chorando) Não chora, menina. Coco não deixa ninguém te bater. Coco não deixa. Quem quiser te maltratar, Coco mata!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Viu, Gá? O homem não quer que tu chore."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Quer a bonequinha? (Ri) Coco te dá. Depois tu dá de novo pro Coco. (Tira a boneca do bolso e dá pra Gá)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Gá quer. Gá quer."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "É do Coco."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Devolve essa droga pra ele, Nhanha."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Deixa ela brincar."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Mandei devolver."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Deixa com ela."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Entrega essa merda pra ele, anda!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Cuida daquela boneca ali. Está machucada por tua culpa."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Tu quem sabe. (Afasta-se, irritado)"
+          }
+        ]
+      },
+      {
+        "cena": "XXII",
+        "falas": [
+          {
+            "personagem": "Gá",
+            "fala": "(Ninando a boneca) Nana! Nana! Nana! (Coco ri, feliz, mas vidrado na menina)"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ai, ai, meu Deus! Ai! (resmungando) (Noca aproxima-se dela)"
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Levanta, Maria! Vai ficar aí jogada fora?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ai... ai... (Noca ajuda Maria a ficar em pé)"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Se ele me pega, me arrebenta!"
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Ele Não é nada."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ele vai ver quando eu entregar esse porco nojento pro Berrão."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Vai querer dizer que eu te bati? Ele vai cagar de rir. Vai achar que foi bem feito."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Vou caguetar pro Berrão que tu anda enchendo a cabeça do pessoal contra ele."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Eu? Tu ficou louca? Acho que te deixei de moleira mole!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Pensa que eu não sei?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Tu sabe o quê?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Que tu arrumou pra ninguém catar papel só pra encher a bucha do Berrão."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Eu? Eu, não! (Todos murmuram)"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Tu mesmo. E tá todo mundo nessa jogada. E tu é o cabeça."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Não mete eu nisso."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Nem eu."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Vai botar a gente no fogo?"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Vê lá."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Essa cadela está batusquela."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Tira a gente dessa Maria!"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "|isso mesmo Maria, cala a boca que é melhor pra Tu!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "A Chicona me pôs por dentro. Tu tinha medo que eu dedasse? Agora é que dedo mesmo."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Ihhh!!! Tô falando."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Que palhaçada é essa, Chicona? Tu que apareceu aqui com esse papo. Eu caí fora."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Escuta, gente. Ninguém está por dentro. Só que joguei verde. Agora o jogo está aberto. Que tu diz, bichado?"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Sei, não."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "O Tião acha que a gente tem que dar um arrocho no Berrão."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Eu, não! Tu que acha."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "O filho-da-puta anda metendo a mão na gente, sem dó. Rouba pra valer. (Pausa)"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Continua"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "O Tião acha que se a gente não catar nada por uns dias, ele sente o aroma da perpétua e daí manera."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Eu não acho porra nenhuma. Isso é idéia tua!"
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Tá todo mundo na mesma!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Se todos toparem, eu pago pra ver."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Só dá certo se ninguém mijar fora do penico."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Mas aqui não da pa confiar em ninguém."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Ô Bento... Tá ounvindo que não é pra falar nada, né? Se ferrar pra um, ferra pra geral."
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Eu tô dentro, e não vou falar nada não. Só não vou catar papel, não é isso!?"
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "É isso aí! Tem que ta todo mundo junto!"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Quem furar a chapa ganha divisa."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Mas aí a gente apaga o miserável."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Sei, não."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tem que saber."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Eu já disse. Se todos toparem, estou aí."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Então também eu."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Vamos lá. Eu vou firme."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Mas gente, se o Berrão fica sabendo ferra com a gente!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "É por isso que ninguém vai abrir o bico né Dona Ju?"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Deixa ela comigo!"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Há muito que esse Berrão precisava de uma entortada."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Vai se fuder na nossa mão!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Não vejo a hora de ver esse filho da puta quebrando a cara."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Por isso que eu bolei o azar."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Tu me fez de palhaça, mas eu vou firme."
+          },
+          {
+            "personagem": "Todos",
+            "fala": "Viva a Maria! Viva a Maria!"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "(Abraçando a Maria-Vai) Mulher legal! (Todos empurram o casal e dão vivas)"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "O Berrão vai se estrepar. Vai entrar bem!"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Vai gastar gasolina à toa! Não leva um saco daqui hoje."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Mas não se bebe aqui hoje? (Todos murmuram)"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Tenho algum. Dá pra cachaça."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Boa! Boa!Tenho algum aqui."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "O Berrão caiu do burro! (Todos os catadores cantam e dançam)"
+          },
+          {
+            "personagem": "Todos",
+            "fala": "O Berrão não é mais aquele / Pau na bunda dele."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Deu certo, hein?!"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Pois é. Todos aceitou sem dificuldade."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "É porque falei do meu jeito. Se depender de vocês."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "O que importa é que o Berrão vai se estrepar!"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Vai mesmo!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Mas Chicona... E esses dois ai?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Espera, gente! (Todos murmuram)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Que foi?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "(Aponta Frido) E esse aí?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Como é? Tá com a gente? (Pausa. Frido olha Nhanha e abaixa a cabeça)"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Não vai responder? Tá com a gente ou não?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Estou."
+          },
+          {
+            "personagem": "Todos",
+            "fala": "Boa! Legal! Viva nós! Cacete no Berrão."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "E tua mulher?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Tá comigo."
+          },
+          {
+            "personagem": "Todos",
+            "fala": "Legal! Berrão se danou! Boa!"
+          }
+        ]
+      },
+      {
+        "cena": "XXIII",
+        "falas": [
+          {
+            "personagem": "Nhanha",
+            "fala": "Espera! (Pausa) Eu estou com a minha filha. Com ela que estou. Vim aqui pra ganhar dinheiro pra levar ela no doutor. E vou ganhar. Quer queiram, quer não. Foi só pra isso que vim aqui pra essa lasqueira dessa terra. Não tenho nada com a vida dos outros. Quero que cada um amargue seu jiló. Mas, de mim e da Gá sei eu. Se todos aqui são uns vagabundos, eu não sou. Já perdi o dia, não vou perder a noite. Vou catar papel. Pela minha menina. Ela precisa. (Pausa)"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Fominha, morta de fome."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Unha de miséria."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Mulher machucada."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "O homem dela não manda?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "É. Não é tu o galo dessa galinha?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Se ela engrossar, faz que nem eu fiz com a Maria. (Mostra o cacete pro Frido)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Eu cuido dela."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "A gente quer ver."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Cuida porra nenhuma!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Quem manda nessa porra é a Nhanha! Tá na cara!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Nhanha, eu sei que a Gá precisa do doutor. Mas, se tá todo mundo querendo se juntar contra um cara que é ruim, nós está com essa gente."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Essa gente não presta. (Todos vaiam)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Tu faz o que eu mandar."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Eu vou catar papel. A Gá precisa de doutor."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "A gente traz a Dona Chica Benzedeira."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Ela vai por essa menina boa."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Tá aí, pronto."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Tu tá afrouxando, Frido. Homem à toa! Nós veio aqui pra ganhar dinheiro. Só pra isso. Tu se meteu com essa mulher e com a bebida, já é igual à peste. Te desconheço. Mas ainda sou mais eu. Pari essa criança e sei que não vou soltar ela no mundo. Precisa de doutor. Vou dar! E tu mais essa gente pode ir à merda! (Pausa)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Até de noite ela se encolhe. Zé Miudo – Até a noite não sei... Mais uma hora ela tem que afrouxar... isso se quiser continuar aqui."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "É isso aí! Chega achando que pode bancar as próprias regras."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "ÉE... Ou botamos eles pra correr, ou tem gente aqui ficando mole,"
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Ô Chica... Vc não vai mandar eles embora, né? Fico com dó da menina, coitada."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Quem tem que ter dó é a mãe dela Dona Ju, e aceitar as regras."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Deixa ela esfriar a cuca."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Faz o que tu quiser. (Sai)"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Vamos procurar comida."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "A hora é essa. (Saem Noca e Bichado)"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Vê lá, mulher. É melhor não se botar contra a gente. (Chicona e Nhanha encaram-se. Depois Chicona sai)"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Vamos nessa."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Vamos. (Saem Chicona, Maria-Vai e Tião e os demais. Nhanha está triste. Coco olha a menina brincar. Depois dealgum tempo, Nhanha repara em Coco)"
+          }
+        ]
+      },
+      {
+        "cena": "XXIV",
+        "falas": [
+          {
+            "personagem": "Nhanha",
+            "fala": "Tu não vai comer?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não estou com fome, não senhora. (Pausa) A menina não tem fome?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Ela já comeu pão. Dá pra se agüentar. Já passou pior, tá acostumada."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Tu não tem fome?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Não. (Pausa) Frido deve trazer comida pra gente. Ele nunca esquece de nós. Ele é um bom homem. Hoje ele está ruim. Foi beber ontem à noite, não tem costume, deu o que deu. (Pausa) Mas, o Frido é um homem de trabalho. Sempre deu duro. É que a sorte não caiu pra gente. Tivemos a menina assim. Não tem culpa, coitadinha. Mas, atrapalha. A gente já podia ter se ajeitado na vida."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Nana, nana, nana... (Coco ri)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Assim que tu sarar, nós volta pra essa terra. Lá é que é nosso lugar. Lá que a gente estava bem. Mas lá não tem doutor. A gente teve que vir. (Coco, sem ligar para o que Nhanha fala, contempla, com desejo estampado no rosto, a menina ninar a boneca)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Eu só tenho medo que o Frido fique igual aos homens daqui. Que ele fique homem à toa. Valha-me Deus, nosso Senhor! (Benze-se) Nem é bom pensar em desgraça. (Nhanha para de falar, cai em si. Olha pra Coco, que está fixo em Gá. Nhanha fica apreensiva)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Agora chega, Gá. Já brincou. Dá a boneca pro homem."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Não! É da Gá!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Dá a boneca!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Rindo) É do Coco. (Nhanha tira a boneca de Gá e dá pra Coco, que se afasta)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Quer! Gá quer!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Depois tem mais. (Afasta-se)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Quer! Gá quer! (Chora) Gá quer!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Para de chorar, Gá! Não adianta abrir o berreiro. Não é da gente. Tem que se agüentar."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Gá quer!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Não resmunga! (Gá fica emburrada e Nhanha pensativa. Entram os outros, menos Frido, Maria Vai e Tião)"
+          }
+        ]
+      },
+      {
+        "cena": "XXV",
+        "falas": [
+          {
+            "personagem": "Poquinha",
+            "fala": "Já se decidiu a topar a parada com a gente?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Sei de mim. Alguém viu o Frido por aí?"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Tá num pau só, lá no botequim. Ele mais o Tião e a Maria."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Estão enchendo o caco."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "O Frido também?"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Todos os três."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Valha-me Deus! O que será que deu no meu Frido pra ele se desgarrar a beber?"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Nada. Só que hoje como não vai sair ninguém catando papel, bota pra beber."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Nós vamos. O Frido sabe que nós temos precisão de dinheiro."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Mas sabe também que com a gente não vale a pena bancar o marrudo."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Com a gente é nessa toada. Quem quiser sair catando papel, sai. Ninguém vai atrapalhar."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Só que tem um porém... quando voltar, a gente toca fogo nos sacos. (Todos riem)"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "E se duvidar, a gente toca fogo na roupa da trouxa também. É só ela bancar a boca-dura."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Quando a gente cisma, é dureza. Nós derruba qualquer um. Tu vai ver o Berrão. Vive aprontando as dele. Todo mundo deixou andar. Um dia a gente se invoca. Esse dia foi hoje. Armamos a cama pra ele se deitar. Depois de hoje, ele se manca e fica manso como um bugio velho. Aquele canhão que ele traz na barrigueira não vai lhe valer, não. Ninguém vai brigar, nem nada. Só que não se cata papel. Manda o palhaço dar tiro, gritar, espernear. Vai se estrepar. Vai dar tiro na vaca que o pariu. Que aqui a gente se lasca, mas não cata pra papel ele."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Só quando ele falar direito com a gente."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "E arrumar uma balança sem truques pra pesar os sacos."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Os dias de machão daquele desgraçado acabaram. E não vai ser ninguém a dar colher de chá pro miserável. Entendeu? Ninguém!"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Muito menos essa vadia aí."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Muito tempo a gente deu o lombo pras porradas dele. Agora é a hora da virada."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "O que ele fez não se faz nem com um cachorro sarnento.."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Roubava a gente de dar gosto."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "E não era nada, perto do que ele aprontava com o Bichado, o Tião e o Pelado. Cada dia arrastava a mulher de um."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Eu, não."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Todas. E daí? O Berrão era a lei. A gente de afinando, ele se servia."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "E em tu, então! O sarro dele era bater na tua cara. Qualquer coisinha te descia o braço. E tu não encarava."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "E alguém podia com a peste?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Era um salve-se-quem-puderr de dar nojo. Um com olho mais comprido que os outros nos pontos bons. Um fazendo chavecada pro outro a toda hora."
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Isso quebrava a força."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Mas agora estamos aí! Todos contra o fedorento do Berrão. E quem não estiver com a gente entra bem."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Vai ser aquela parada."
+          },
+          {
+            "personagem": "Bento",
+            "fala": "De dar gosto."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Assim que tem que ser. Com homem, não se folga. Vamos mostrar."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Se essa aí quiser catar papel, se dana toda. Como é, vai querer sair catando? (Pausa)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Já disse que a gente precisa. Eu e o Frido vamos sair. Nós não é contra ninguém. Só que tem que olhar pela menina."
+          }
+        ]
+      },
+      {
+        "cena": "XXVI",
+        "falas": [
+          {
+            "personagem": "Noca",
+            "fala": "O Frido não vai."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Vai, moça. Ele sabe que deve ir."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Ele falou que não ia."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Conheço bem meu Frido. Ele não vai esquecer a filha."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Só sei que ele disse que tá com a gente."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Tá com a gente dele, que sou eu mais a menina."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Mulher marruda, essa! Se o Frido disse que não vai, pronto. Tu fica com ele, que dá certo pra tu também."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Frido nunca ia dizer isso."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Tá me chamando de mentirosa?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Só quero cuidar da minha vida."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Então retira o que disse"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Mas o quê que eu disse?"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Me chamou de mentirosa."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Só falei que eu e o Frido vamos sair pra catar papel."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Vão a parte nenhuma. E tu dobra a língua quando falar comigo."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Me deixa em paz, gente."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Quem mandou se meter?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Agora agüenta. A Noca é dureza."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Briga de mulher é um sarro."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Vai engolir desaforo, Noca?"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "(Empurra Nhanha) Como é? Vai retirar o que disse ou não? (Todos murmuram)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Por favor, moça. Não falei nada demais. Se falei foi sem querer ofender. Me desculpe, pronto. Agora deixa eu."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Deixa uma porra. Ta com medo, por isso quer afinar. Mas, não vou deixar barato, não! Vou te ensinar a me dar respeito. (Empurra Nhanha com mais força)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "É pela menina que estou pedidno. Deixa eu em paz."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Cadela safada! (Ameaça ir pra cima de Nhanha)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Peste! Peste da moléstia! (Todos murmuram)"
+          }
+        ]
+      },
+      {
+        "cena": "XXVII",
+        "falas": [
+          {
+            "personagem": null,
+            "fala": "(Gá agitada)",
+            "tipo": "rubrica_ou_texto"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "O que aconteceu? Gá tá muito irritada."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Essa cadela queria me bater! (Nhanha, tomada de fúria, atira Noca longe com grande violência)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Deixa eu cuidar da menina. (Empurra todos) É minha filha, eu cuido dela. (Todos afastam-se um pouco, menos Frido)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Sai tu também, bêbado nojento!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Ela é minha filha também."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Devia ter vergonha nessa cara. Nós largada aqui sem comer e tu bebendo com esses vagabundos. Arreda daqui, anda! Tu, Coco, me traz água. (Nhanha faz massagens no rosto de Gá)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Filha! Gá! É a Nhanha, Gá!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Olha a água. (Nhanha esfrega a mão molhada no rosto da menina)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Gá! Gá! Sou eu. Nhanha. (Gá vai se recuperando)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Gemendo) Ai, ai... Nhanha..."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Estou aqui."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Rindo) Ela não morreu."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Graças a Deus!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Ai, ai... Nhanha..."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Encosta ela aqui, Coco. Aqui. (Coco ajuda a encostar Gá em um caixote)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Ela já está bem."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Quer a bonequinha?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Dá pra ela, Coco."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Só por um pouco. Depois ela devolve."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Por favor, depois ela devolve. (Coco dá a boneca pra Gá)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Rindo, feliz) É da Gá."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Ela está boa de novo."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Graças a Deus! (Vira-se para todos. Está furiosa) Escutem bem, seus filhos-da-puta!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Está falando comigo também?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "(Agarra um pau) Estou falando com todos! Entendeu? Com todos. Cada um cuida da sua vida e deixa eu mais minha filha em paz. Não quero saber de ninguém. Se todos aqui são uns vagabundos, uns frouxos, uns miseráveis sem porquê, quero que se danem. Eu sei de mim e da minha menina. Se não querem trabalhar, é coisa de cada um. Eu preciso de dinheiro. Eu vou trabalhar! Quer queiram, quer não. Entenderam? (Pausa)"
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Ela é braba, né gente!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Para Frido) Tua mulher é paraíba?"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Ela que manda na tua vontade?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "A greluda te dobra fácil."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Mulher boa é assim!"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Ela calou o bico de todo mundo."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Como é, Frido? Fica assim mesmo?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Tu falou que fazia ela ficar com a gente. (Pausa)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Escuta, Nhanha..."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Me deixa, tu também! (Pausa)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Eles me falaram do tal Berrão. Ele roubava e defeiteava todo mundo. O homem está mesmo precisando aprender. Não custa nada a gente perder um dia mais uma noite, pra mostrar pra ele que aqui todo mundo é gente. Nós fica com todos! (Pausa) Então, Nhanha?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Tu virou molenga! Fica, se quer. Eu fico com a minha filha. Foi pra isso que vim."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Mas a gente sabe. É só por hoje. Pra gente pegar esse merda do Berrão pelo pé. Ele vive tirando o ranço no lombo da gente. Precisa aprender."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Todo mundo tem bronca dele. É sinal que não presta."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Ele sempre rouba a gente. Se tu não fica com nós, ele te rouba também. E não vai te valer espernear."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "E se tu pensa que na cama tu ajeita a diferença, está engrupida. O sujeito é um cão. Com ele não tem acerto."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Se ele te rouba, rouba tua filha."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Isso! Ele vai roubar a tua filha."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "E agora, que tu diz? (Pausa)"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Perdeu a língua?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Aí é que tá o nó! Se ele mete a mão na tua grana, tua filha se estrepa. E tu vai reclamar sozinha? (Pausa) Quero ver tu sair dessa. Vai ficar calada? É, tu sabe o que a gente queria dizer."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Se alguém me roubar e roubar a Gá, eu juro por essa luz que me alumia, eu mato o desgraçado filha-da-puta. E quando digo que mato, é que mato mesmo. (Pausa) Assim é que tem que ser. Se um cabra sem jeito aporrinha a vida da gente, não adianta ficar cozinhando o galo, não. Porque ele vai ser sempre sacana. O negócio é aqui, no pau. Acabar com o cara pra sempre. Conversa de parar pra ver a vida passar é pra cara de vida à toa. Cara de cabeça fresca. Diferença se tira é de pau. (Pausa) Se alguém entrava a vida da Gá, eu mato. Tá jurado pra todos. (Pausa) Mas eu não paro de trabalhar. (Nhanha olha bem de frente para todos. O pessoal abaixa a cabeça, para não encarar Nhanha. Depois de algum tempo, Nhanha vai até Gá, que dorme abraçada à boneca. Examina a menina, depois, com cuidado, retira a boneca e dá para Coco)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Pega a tua boneca. Obrigada. Não vou esquecer. Agora, deixa ela sossegada. Está dormindo. Ela tem sono de pedra. Só vai acordar com dia alto. Vamos catar papel."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Ela fica sozinha?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Fica. Não tem perigo, ela não acorda. Vamos, Frido! A gente precisão. (Frido olha para todos com quem se justifica. Como ninguém diz nada, dá de ombros, apanha o saco vazio e sai junto com Nhanha. Passam na frente de todos, sem ninguém fazer um gesto para detê-los. Coco os segue mais devagar, sempre olhando para a menina, como se tivesse pena de deixá-la ali sozinha. Depois que os três saem, reina grande silêncio. Um não tem coragem de olhar para o outro)"
+          }
+        ]
+      },
+      {
+        "cena": "XXVIII",
+        "falas": [
+          {
+            "personagem": "Chicona",
+            "fala": "Eles foram catar."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Pois é. (Pausa)"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Ninguém diz nada?"
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Dizer o quê? Deixa ir. (Pausa)"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Mas não estava acertado de não ir ninguém?"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Pra tu ver. (Pausa)"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "(Suspirando) Quer saber? Aqui ninguém é de nada."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Agora tu disse tudo. A gente é frouxo mesmo."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Sempre fomos. Sorte do Berrão. (Pausa)"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Eu acho que a gente devia ir também."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "É melhor a gente deixar a chavecada pra outra vez."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Se os três foram, a jogada está furada."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Tanto fogo de palha pra nada."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Ê..Azar. (Pausa)"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Então, vamos?"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Tudo armado, e olha ai! É... Não somos de nada mesmo!"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "Então, vamos logo!"
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Fazer o que? Vamos né... (Todos saem. Apenas Gá fica em cena. Dorme tranqüilamente. Coco entra furtivamente. Olha para todos os lados, para ver de ninguém o segue e, com todos cuidado, aproxima-se de Gá)"
+          }
+        ]
+      },
+      {
+        "cena": "XXIX",
+        "falas": [
+          {
+            "personagem": "Coco",
+            "fala": "(Baixinho) Gá! Gá! Ei, menina! (Coco sacode a menina várias vezes)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Acordando) Hum... Nhanha... Nhanha..."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Nhanha não está. Saiu."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Senta-se assustada) Nhanha!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Foi catar papel."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Chorando) Gá quer Nhanha. Nhanha!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Eu estou aqui. Olha eu aqui."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Gritando) Gá quer Nhanha. Nhanha!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Psiu! Não grita! Não grita!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Com medo) Gá quer Nhanha!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não adianta gritar que ela não vem. (Gá começa a chorar)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Tapa a boca da menina) Para esse berreiro! Menina bonita não chora. (Pausa. Coco presta atenção pra ver se alguém se aproxima, logo se tranqüiliza) Tu não precisa ter medo do Coco. Tu quer brincar com a bonequinha? Então para de chorar. Se tu parar, Coco te dá a boneca. Quer? (Coco solta Gá, que soluça) Quer a bonequinha?"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Gá quer a Nhanha."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Ela não vem mais. Nhanha deu Gá pro Coco. (Ri) Agora a Gá é do Coco."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Nhanha? A Nhanha?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Foi embora."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Chora) Nhanha! Nhanha!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Outra vez tapa a boca de Gá) Quieta! Coco só estava fazendo onda. Nhanha volta logo. Ela foi catar papel. (Tira a boneca do bolso) Tu quer? (Solta a Gá)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Gá quer Nhanha."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Já falei que ela vem logo. Não precisa ficar aporrinhada. Ela já vem. O Coco toma conta da Gá até Nhanha voltar. Quer a bonequinha?"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Quer! Gá quer! (Vai pegar)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Retira a boneca e ri) Ainda não. Tu tem que agradar o Coco primeiro. (Ri) Agrada o Coco. Anda, agrada. (A menina está meio emburrada. Coco segura a mão dela e passa no próprio rosto)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Assim. Faz sozinha. Faz, que o Coco te dá a bonequinha. (Gá agrada Coco, que ri nervoso)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Agora dá pra Gá."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Quero mais. (Gá agrada mais Coco, que ri)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Agora aqui. (Desabotoa a camisa, pega a mão de Gá e a esfrega no peito) Assim. Assim. Faz sozinha. Faz, Gá. Coco faz também na Gá. Coco faz. (Coco bolina Gá, que ri, com cócegas. Coco está bemexcitado. Levanta-se, pega Gá pelo braço. Ouve-se um barulho qualquer. Coco fica apreensivo. Olha para todos os lados. Certifica- se de que não há ninguém por perto. Volta até Gá, abraça a menina, que grita)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Nhanha! Nhanha!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não grita, Gá. Fica quieta. (Coco afasta-se da menina e aproxima-se de uma pilha de caixotes. Está bem nervoso, e a menina, meio indiferente ao que está se passando)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Vem buscar a boneca. Vem, Gá. Coco te dá a bonequinha pra sempre. Vem, Gá. Vem aqui atrás. (Coco entra atrás dos caixotes)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Tem bicho aí."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Vem, não tem, não. Vem buscar a bonequinha. Vem! Coco te dá."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Gá tem medo de bicho."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Coco mata o bicho. Pode vir. Coco não deixa o bicho pegar Gá."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Gá não gosta do bicho."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Vou matar o bicho. Olha! Vem ver! (Coco sai de trás dos caixotes com um pau e dá pauladas no ar, como se matasse o bicho) Morre, bicho! Morre! Morre! Gá tem medo do bicho. Morre! Morre! (Gá ri, com muita inocência, dos gestos de Coco)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Pronto, matei o bicho. Agora, vem."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Rindo, ainda) Tem outro bicho lá."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não tem mais. Vem! Olha a bonequinha! Vem pegar!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Tem bicho. (Coco agarra a menina pelo braço e a leva até os caixotes. Gá vai com medo)"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Tem bicho. Gá tem medo."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Coco não deixa vir bicho. (Os dois somem atrás dos caixotes)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Olha a bonequinha."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Dá pra Gá."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Gá agrada o Coco. Assim. Assim. Agora aqui. Aqui. Assim. Assim. Coco agrada a Gá. Assim. (Gá ri, com cócegas)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Agora aqui! Aqui!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Grita, desesperada) Não! Não! (Gá sai correndo de trás dos caixotes. Logo surge Coco atrás dela)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Vem cá, menina! Vem cá!"
+          },
+          {
+            "personagem": "Gá",
+            "fala": "(Apavorada) Não! Não! (Coco agarra a menina pelo braço e tenta levá-la novamente para trás dos caixotes)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Coco não vai te fazer maldade. Coco não vai."
+          },
+          {
+            "personagem": "Gá",
+            "fala": "Nhanha! Nhanha! (Gá debate-se e começa a ter um ataque. Cai no chão em, convulsões)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Desespera-se) Merda! Filha-da-puta! (Dá tapas em Gá, que se debate) Pára com isso, Gá! Pára com isso! Fica quieta! (Coco, agoniado, começa a arrastar a menina pra trás dos caixotes. Gá debate-se, cada vez mais. Coco não consegue controlar-se) Para! Para! Para! Para, filha- da-puta! Fica quieta! (Coco começa a estrangular Gá) Quieta! Quieta! Quieta! (Gá morre. Coco, transtornado, dá-se conta do que fez)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Porra, que é isso? Tu pegou a menina?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Filho-da-puta!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Nojento! Porco nojento!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Puxa uma faca do bolso) Coco vai te acabar! Coco vai te acabar, seu merda!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Tu vai se danar de verde e amarelo. Deixa o pessoal saber. (Coco, transtornado, vai até junto da menina e a fica olhando. Depois, deita-se a seu lado e tem uma crise de choro. Entram Chicona, Tião, Maria-Vai e Pequena, Tonha, Poquinha, Bichado e Noca)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Olha lá o tarado!"
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "O que aconteceu aqui?"
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "A menina! A Gá! (corre até ela)"
+          }
+        ]
+      },
+      {
+        "cena": "XXX",
+        "falas": [
+          {
+            "personagem": "Maria-Vai",
+            "fala": "A menina está morta!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "O filho-da-puta é que matou."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Porco imundo!"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Cachorro da peste."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Puta merda, que coisa da moléstia."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "A mãe vai se azucrinar toda."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Vamos agarrar esse puto. (Coco, sem expressão, olha a menina. Está com a faca mão)"
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Cuidado, está de faca!"
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Filho-da-puta!"
+          },
+          {
+            "personagem": "Bento",
+            "fala": "Desgraçado!"
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Vamos esperar os outros."
+          },
+          {
+            "personagem": "Tonha",
+            "fala": "A mãe é que diz o que fazer. Carcará     É isso. Melhor esperar. A gente fica nas encolhas. Maria- Vai - O cara ta batusquela. É perigoso. (Todos ficam espiando Coco ao lado da menina. Entram Frido e Nhanha)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Que foi? Que foi, gente? Ai, meu Deus, que foi? Gá! Minha Gá! (Nhanha atira-se sobre Gá e chora convulsivamente) Gá! Está morta! Está morta! Minha criança! Minha filhinha!"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Gá.... Minha menina."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Foi o Coco que matou. Queria se tratar com ela."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Seu filho-da-puta! (Avança sobre Coco) Tu matou ela, desgraçado? Tu matou ela?"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Levanta-se com a faca na mão. Está histérico) Eu não matei. (Avança para Frido, com a faca. Frido vai se afastando) Eu não matei. Eu só queria ela pra mim. Eu só queria ela pra mim."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "(Que chorava sobre o corpo de Gá, para de chorar e olha fixo para Coco) Tu é o cão!"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "(Para Nhanha) Eu não matei. Eu só queria ela pra mim. Eu não matei."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "(Em pé) Tu vai se acabar, maldito! (Anda lentamente pra Coco)"
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Não chega perto que eu te furo! Eu te furo!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "(Vira-se de costas para Coco e grita histeria para todos) Ele é coisa da peste! Tem que morrer! Tem que se acabar! Pega ele, gente! Mata! Mata! Mata! (Todos atiram-se sobre Coco e o derrubam no chão, massacrando-o, enquanto Nhanha grita: “Mata! Mata!” Nhanha está de costas para eles. Aos poucos, as pessoas, sempre em silêncio, afastam-se de Coco. Frido vem até Nhanha, que chora baixinho)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Vem Nhanha, ele está acabado!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Que Deus tenha dó da sua alma. (Ajoelha-se perto de Gá e fica chorando. Todos espiam de longe, com respeito. Entra Berrão)"
+          }
+        ]
+      },
+      {
+        "cena": "XXXI",
+        "falas": [
+          {
+            "personagem": "Berrão",
+            "fala": "O que que tá acontecendo aqui?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Tem dois que se acabaram."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Puta merda! Agora vai dar buchicho! Quem se acabou?"
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Coco matou a menina."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Nós matou Coco."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Foi bem feito o que a gente fez. Foi todo mundo junto pra cima dele. Demos de verdade. Acabou rápido e rasteiro como o filho de uma vaca que ele era."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Fizemos o que tinha de ser feito, e bem."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Bem, o cacete! Isso vai dar truta. Vai baixar cana. Vai dar um rolo danado."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Deixa dar."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Deixa dar o que?"
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Deixa a cana baixar."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Pra vagabundo, tanto faz estar preso ou solto, né?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "É, e daí?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "E daí que não quero saber. Não tenho nada com isso."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Todo mundo tem que estar nessa jogada. Todo mundo, manjou? Até tu!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "O que tu tá querendo dizer?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Estou querendo dizer que ninguém, nem tu, vai cair fora dessa."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Isso que é. O Coco quis se servir da menina. Isso deu nojo na gente. Nós fizemos ele. Agora a gente tem que livrar a cara."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "A polícia ainda não foi chamada."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Só a gente é que sabe o que aconteceu."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "A gente, mais tu. (Pausa)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Porra! Ninguém aqui tem cabeça fria? Podiam deixar o Coco pra lá. Não precisavam ter matado ele. Da menina a gente se livrava fácil. Era só dizer que ela teve um ataque e pronto. Agora, esse merda é espeto. Filho-da-puta de quem teve a idéia de apagar o miserável."
+          },
+          {
+            "personagem": "Tom",
+            "fala": "Tu não se mancou que a gente sentiu nojo do que ele fez? Não se mancou? Foi todo mundo junto que quis pegar o tarado. Ele estava ali parado, de ferro na mão. Se não tivesse todo mundo picado de raiva, ninguém ia ter peito de entrar nele."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Não precisou falar duas vezes. Ninguém deu pra trás. Foi mole jogar o canalha no chão com faca e tudo. Pena que ele se apagou depressa. Nós devíamos era ir matando ele devagar. Pegar um pau e enfiar no rabo dele até ele cagar sangue."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Ou capar o porco com a própria faca e deixar ele aí pra te contar como foi. Ele não prestava."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Tinha que se estrepar. Só que devagar. Bem devagar. Pro filho-da- puta sentir o cheiro da perpétua. (Pausa)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Bem, o que está feito, está feito. Não adianta chorar. Agora, é tratar de se mandar daqui. Quanto antes, melhor. Vamos marcar o ponto lá embaixo da ponte. Ninguém vem mais pra cá. A gente esconde o resto do Coco aí atrás dos caixotes e menina a gente leva. Amanhã eu chamo a polícia, digo que ela teve um ataque e morreu. O Coco, só quando começar a feder e os urubus começarem a baixar aqui, é que o pessoal vai se tocar que tem gente morta. Aí, é tarde. Fica assim mesmo. Ele não tem importância nenhuma. Um a menos. Botem os sacos no caminhão. Temos que cair fora. (Ninguém se mexe) Estão surdos?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Não vai pesar?"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Acha que eu vou ficar aqui a vida inteira? Quero me arrancar o mais depressa possível."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Mas a gente precisa da grana."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Estou estranhando o papo aqui hoje. Que é que há? Tá todo mundo roncando grosso."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "É assim que é! A gente hoje aprendeu um troço pra toda a vida. Que coisa ruim acaba se a gente quiser. E se a gente quer, não tem por onde. O Coco está aí pra não me deixar mentir."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Se tu não quer pesar os sacos, não pesa. Tua cabeça é teu guia."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Mas, tem um porém. Não leva porra nenhuma daqui."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Quero dar uma colher de chá e todos ficam assanhados. Tá combinado. Não levo os sacos. E daí? Que tu faz com eles?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Toco fogo neles."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "E ganha muito com isso?"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Mas tu te estrepa."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Só porque tu quer. Olha pra isso, otária! (Pega o dinheiro do bolso) Tá vendo? Isso me escora. E tu vai passar fome."
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "Pode ser. Mas ninguém vai me levar no bico."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Não vão botar os sacos no caminhão? (Ninguém se mexe) Como é?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Seu Berrão, eu preciso de dinheiro pra enterrar minha criança. Por favor, pese os meus."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Que enterrar, que nada. Amanhã se dá jeito nela. Para isso tem governo. Pra enterrar de graça os que estão na lona. (Nhanha, que reza ao lado da filha, volta-se para Berrão)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Seu Berrão, essa menina teve uma vida de cão, mas vai ter morte de gente. O papel está aí. Foi catado por seu mando."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "E vai ficar aí. E o dinheiro aqui. (Mostra os bolsos)"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Nós precisa de dinheiro, Seu Berrão. Não é por nós, é pela menina!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Já se danou mesmo. Pra que gastar dinheiro à toa com ela?"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Isso é coisa nossa. O senhor mandou nós catar papel. Nós catou. Agora tem que comprar."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Eu compro o que eu quero. E tem mais uma coisa. O que eu ia pagar não dava pra enterrar ninguém."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Juntando a grana de todos, dava."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu cala a boca. Ninguém te chamou na conversa."
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Eu falo quando quero."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então fala. Bota a boca no trombone que eu também boto. Se começarem a se assanhar, chamo a cana e dedo todos vocês. Eles apanham um por um e eu apanho os sacos de graça."
+          },
+          {
+            "personagem": "Poquinha",
+            "fala": "Isso é sacanagem."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Mas é uma boa pedida. (Vai sair) Vou mostrar como se lida com vagabundos."
+          },
+          {
+            "personagem": "Bichado",
+            "fala": "Pesa os sacos seu Berrão. Nosso dinheiro vai para o enterro. (Todos concordam e jogam os sacos no meio do palco. Nhanha entra na frente de Berrão)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "É melhor o senhor dá o dinheiro do enterro. Esse gosto o senhor não tira da Gá."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Pesa os sacos seu Berrão. É pela menina..."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Puxa o revólver) Sabe o que é isso?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Bela merda! (Todos rodeiam o Berrão)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Que é que há? Eu mando um pra glória."
+          },
+          {
+            "personagem": "Frido",
+            "fala": "A gente sabe que se tu tiver coragem, tu desgraça um. Mas a gente é muitos. Quem ficar te pega."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Não está vendo o revólver na minha mão? Então, que papo é esse? Eu estouro um. Estouro o primeiro que vier, estou avisando. Quem avisa amigo é. Eu queimo um. Eu queimo. Mas, não dou um puto de um tostão pra sacana nenhum."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "(Mostra o peito) Então queima! Atira aqui! Atira! Falta coragem? Tu não tem peito? Atira! Atira, seu porco!"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Tu tá louca, mulher!"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Tu é que está louco de medo. Atira! Tem medo, seu puto? Então dá o dinheiro! (Pausa) Anda, dá a grana, ou atira! Atira! Tu me mata. E daí? Estou cagando um monte. Já morri um cacetão de vezes, tá bom? Morri de fome, morri de frio, morri de medo, morri de ver minha cria morrer. E agora chegou a tua vez. Atira! Atira! Anda, atira! Mas, tu não escapa. Gasta a tua verdade aqui no meu peito. Anda! Daí, eles te pegam e te azaram. Esta é a hora de acertar as contas. Quem tiver se danado mais está com a razão. Anda, atira! Atira! (Nhanha anda lentamente, avançando sobre Berrão, que está apavorado)"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "(Aconselhando) É melhor tu dar a grana pra ela."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "É... É... vou te ajudar enterrar a criança. Vou ajudar. Afinal, é só isso que tu quer, não é?"
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "É. (Berrão pega todo o dinheiro e dá pra Nhanha)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Pronto. Taí o que tu queria. (Nhanha fica parada na frente de Berrão. Olha com desconfiança para o dinheiro. Berrão, percebendo que já domina a situação novamente, fala agora com autoridade para Nhanha, comprando-a definitivamente)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então mulher? Não tá contente? Não tem tua grana? Então? Vai cuidar da tua cria morta, antes que os urubus dêem conta dela. (Nhanha continua parada) Vai, mulher, vai! Vai! Toda essa gente tá chateada com essa coisa toda. Eu também, clro. Pombas! Quem não se queima com um troço escabroso desses? (Passa a mão no ombro de Nhanha) Todo mundo ficou perturbado. Tu gritou. Todo mundo gritou. Eu também gritei. Essa onda me deixou zoeira. Mas, pombas! A vida continua, é ou não é? Um morre, mas quem fica tem que tocar o barco pra frente. Não foi o fim do mundo, não é? Vai lá, mulher! Vai cuidar da tua cria. Ela merece."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "(Bem triste) É. É."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Então vai logo, mulher! (Nhanha olha para todos, como se pedisse desculpas)"
+          },
+          {
+            "personagem": "Frido",
+            "fala": "Gá vai ter enterro de gente."
+          },
+          {
+            "personagem": "Nhanha",
+            "fala": "Vai sim.... (Nhanha, sempre triste, abatida, afasta-se de Berrão e se ajoelha ao lado de Gá, começando a rezar. Frido a acompanha. Os catadores, meio embaraçados, entreolham-se e vão lentamente se colocando entre Berrão e Nhanha. Estão juntos, formando um bloco. Chicona, que está na frente, volta-se para os outros)"
+          },
+          {
+            "personagem": "Chicona",
+            "fala": "E nós? Como é que fica? (Todos os catadores começam a falar ao mesmo tempo, incitando-se uns aos outros para tomar a iniciativa e agarrar o Berrão. No auge do vozerio, Tião dá um empurrão em Chicona, que cai na frente de Berrão. Berrão dá-lhe um pontapé e a atira longe. Os outros tentam avançar, mas Berrão dá um tiro pro ar. Todos param de falar e, apavorados, recuam)"
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Peguem os sacos e botem no caminhão! (Um a um, lentamente, os catadores vão pegando os sacos e saindo. Reza de Nhanha cresce, misturando-se com ruídos de grande cidade que vão entrando, enquanto o pano fecha lentamente) FIM"
+          }
+        ]
+      }
+    ]
+  }
+}

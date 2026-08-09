@@ -1,18 +1,22 @@
 import { useState } from 'react'
+import { CharacterSelect } from './components/CharacterSelect'
 import { Rehearsal } from './components/Rehearsal'
-import { SceneSelect } from './components/SceneSelect'
+import { SceneBrowser } from './components/SceneBrowser'
 import { SessionDone } from './components/SessionDone'
-import { loadProgress } from './lib/progress'
+import { loadProgress, setLastCharacter } from './lib/progress'
 import { isSpeechSupported } from './lib/speech'
 import type { ProgressState, SessionConfig } from './types'
 
 const VOICE_NOTICE_KEY = 'homens-de-papel:voice-notice-dismissed'
 
-type Screen = 'home' | 'rehearsal' | 'done'
+type Screen = 'cast' | 'scenes' | 'rehearsal' | 'done'
 
 export default function App() {
-  const [screen, setScreen] = useState<Screen>('home')
+  const [screen, setScreen] = useState<Screen>('cast')
   const [progress, setProgress] = useState<ProgressState>(() => loadProgress())
+  const [character, setCharacter] = useState<string | null>(
+    () => loadProgress().lastCharacter ?? null,
+  )
   const [session, setSession] = useState<SessionConfig | null>(null)
   const [voiceNoticeDismissed, setVoiceNoticeDismissed] = useState(() => {
     try {
@@ -31,6 +35,12 @@ export default function App() {
     }
   }
 
+  function selectCharacter(name: string) {
+    setCharacter(name)
+    setProgress((prev) => setLastCharacter(prev, name))
+    setScreen('scenes')
+  }
+
   function start(config: SessionConfig) {
     setSession(config)
     setScreen('rehearsal')
@@ -39,11 +49,12 @@ export default function App() {
   if (screen === 'rehearsal' && session) {
     return (
       <Rehearsal
-        sceneIds={session.scenes}
+        character={session.character}
+        sceneKeys={session.sceneKeys}
         mode={session.mode}
         progress={progress}
         onProgressChange={setProgress}
-        onExit={() => setScreen('home')}
+        onExit={() => setScreen('scenes')}
         onFinished={() => setScreen('done')}
       />
     )
@@ -52,20 +63,30 @@ export default function App() {
   if (screen === 'done' && session) {
     return (
       <SessionDone
-        sceneIds={session.scenes}
+        character={session.character}
+        sceneCount={session.sceneKeys.length}
         onAgain={() => setScreen('rehearsal')}
-        onHome={() => setScreen('home')}
+        onScenes={() => setScreen('scenes')}
+        onCast={() => setScreen('cast')}
+      />
+    )
+  }
+
+  if (screen === 'scenes' && character) {
+    return (
+      <SceneBrowser
+        character={character}
+        progress={progress}
+        voiceNoticeShown={voiceNoticeDismissed || isSpeechSupported()}
+        onDismissVoiceNotice={dismissVoiceNotice}
+        onBack={() => setScreen('cast')}
+        onStart={start}
+        onProgressChange={setProgress}
       />
     )
   }
 
   return (
-    <SceneSelect
-      progress={progress}
-      voiceNoticeShown={voiceNoticeDismissed || isSpeechSupported()}
-      onDismissVoiceNotice={dismissVoiceNotice}
-      onStart={start}
-      onProgressChange={setProgress}
-    />
+    <CharacterSelect progress={progress} onSelect={selectCharacter} />
   )
 }

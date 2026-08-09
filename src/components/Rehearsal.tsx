@@ -1,92 +1,63 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
-import { FridoPrompt } from './FridoPrompt'
-import { TurnCard } from './TurnCard'
-import { attemptKey } from '../lib/normalize'
-import { markSceneComplete, recordAttempt } from '../lib/progress'
-import { getScene, isFridoTurn } from '../lib/scenes'
+import { useEffect, useMemo, useState } from 'react'
+import { LinePrompt } from './LinePrompt'
+import {
+  getCharacterProgress,
+  markMemorized,
+  markSceneComplete,
+  recordAttempt,
+} from '../lib/progress'
+import { getLinesForScenes, parseSceneKey, sceneKey } from '../lib/script'
 import type { InputMode, ProgressState } from '../types'
 
 type Props = {
-  sceneIds: string[]
+  character: string
+  sceneKeys: string[]
   mode: InputMode
   progress: ProgressState
-  onProgressChange: (next: ProgressState | ((prev: ProgressState) => ProgressState)) => void
+  onProgressChange: (
+    next: ProgressState | ((prev: ProgressState) => ProgressState),
+  ) => void
   onExit: () => void
   onFinished: () => void
 }
 
-const AUTO_MS = 2200
-
 export function Rehearsal({
-  sceneIds,
+  character,
+  sceneKeys,
   mode,
   progress,
   onProgressChange,
   onExit,
   onFinished,
 }: Props) {
-  const [scenePos, setScenePos] = useState(0)
-  const [turnIndex, setTurnIndex] = useState(0)
-  const [autoPlay, setAutoPlay] = useState(true)
-  const [history, setHistory] = useState<number[]>([])
-  const bottomRef = useRef<HTMLDivElement>(null)
-
-  const sceneId = sceneIds[scenePos]
-  const scene = getScene(sceneId)
-  const turn = scene?.turns[turnIndex]
-  const waitingForFrido = Boolean(turn && isFridoTurn(turn))
-
-  const fridoTotalInScene = useMemo(
-    () => scene?.turns.filter(isFridoTurn).length ?? 0,
-    [scene],
+  const lines = useMemo(
+    () => getLinesForScenes(character, sceneKeys),
+    [character, sceneKeys],
   )
+  const [index, setIndex] = useState(0)
+  const line = lines[index]
+  const charProg = getCharacterProgress(progress, character)
 
-  const fridoDoneInScene = useMemo(() => {
-    if (!scene) return 0
-    return scene.turns.slice(0, turnIndex).filter(isFridoTurn).length
-  }, [scene, turnIndex])
+  const sceneProgress = useMemo(() => {
+    if (!line) return { memorized: 0, total: 0 }
+    const inScene = lines.filter(
+      (l) => l.actId === line.actId && l.scene === line.scene,
+    )
+    const mem = new Set(charProg.memorized)
+    return {
+      memorized: inScene.filter((l) => mem.has(l.id)).length,
+      total: inScene.length,
+    }
+  }, [line, lines, charProg.memorized])
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
-  }, [turnIndex, scenePos, waitingForFrido])
+    if (lines.length > 0 && index >= lines.length) onFinished()
+  }, [index, lines.length, onFinished])
 
-  useEffect(() => {
-    if (!scene || !turn || waitingForFrido || !autoPlay) return undefined
-
-    const timer = window.setTimeout(() => {
-      if (turnIndex + 1 >= scene.turns.length) {
-        onProgressChange((prev) => markSceneComplete(prev, sceneId))
-        if (scenePos + 1 < sceneIds.length) {
-          setScenePos((p) => p + 1)
-          setTurnIndex(0)
-          setHistory([])
-        } else {
-          onFinished()
-        }
-        return
-      }
-      setHistory((h) => [...h, turnIndex])
-      setTurnIndex((i) => i + 1)
-    }, AUTO_MS)
-
-    return () => window.clearTimeout(timer)
-  }, [
-    autoPlay,
-    onFinished,
-    onProgressChange,
-    scene,
-    sceneId,
-    sceneIds.length,
-    scenePos,
-    turn,
-    turnIndex,
-    waitingForFrido,
-  ])
-
-  if (!scene || !turn) {
+  if (!lines.length) {
     return (
       <div className="rehearsal">
-        <p>Cena não encontrada.</p>
+        <p>Nenhuma fala deste personagem nas cenas escolhidas.</p>
         <button type="button" className="btn btn--primary" onClick={onExit}>
           Voltar
         </button>
@@ -94,33 +65,39 @@ export function Rehearsal({
     )
   }
 
-  function finishScene() {
-    onProgressChange((prev) => markSceneComplete(prev, sceneId))
-    if (scenePos + 1 < sceneIds.length) {
-      setScenePos((p) => p + 1)
-      setTurnIndex(0)
-      setHistory([])
-    } else {
-      onFinished()
+  if (!line) {
+    return null
+  }
+
+  function completeIfSceneDone(fromIndex: number) {
+    const current = lines[fromIndex]
+    if (!current) return
+    const key = sceneKey(current.actId, current.scene)
+    const next = lines[fromIndex + 1]
+    const leavingScene = !next || next.actId !== current.actId || next.scene !== current.scene
+    if (leavingScene) {
+      onProgressChange((prev) => markSceneComplete(prev, character, key))
     }
   }
 
-  function advance() {
-    const current = getScene(sceneId)
-    if (!current) return
-    if (turnIndex + 1 >= current.turns.length) {
-      finishScene()
+  function advance(markDone: boolean) {
+    if (markDone) {
+      onProgressChange((prev) => markMemorized(prev, character, line.id))
+    }
+    completeIfSceneDone(index)
+    if (index + 1 >= lines.length) {
+      onFinished()
       return
     }
-    setHistory((h) => [...h, turnIndex])
-    setTurnIndex((i) => i + 1)
+    setIndex((i) => i + 1)
   }
 
-  function handleAttempt() {
-    onProgressChange((prev) => recordAttempt(prev, sceneId, turnIndex))
-  }
-
-  const attemptCount = progress.attempts[attemptKey(sceneId, turnIndex)] ?? 0
+  const attemptCount = charProg.attempts[line.id] ?? 0
+  const sceneLabel = `${line.actLabel} · Cena ${line.scene}`
+  const scenePos =
+    sceneKeys.findIndex(
+      (k) => k === sceneKey(line.actId, line.scene),
+    ) + 1
 
   return (
     <div className="rehearsal">
@@ -129,54 +106,44 @@ export function Rehearsal({
           Sair
         </button>
         <div className="rehearsal__status">
-          <strong>Cena {sceneId}</strong>
+          <strong>{character}</strong>
           <span>
-            {scenePos + 1}/{sceneIds.length} · Frido {fridoDoneInScene}/
-            {fridoTotalInScene}
+            {sceneLabel} · cena {scenePos}/{sceneKeys.length}
+          </span>
+          <span>
+            Fala {index + 1}/{lines.length} · decoradas na cena{' '}
+            {sceneProgress.memorized}/{sceneProgress.total}
           </span>
         </div>
-        <label className="rehearsal__auto">
-          <input
-            type="checkbox"
-            checked={autoPlay}
-            onChange={(e) => setAutoPlay(e.target.checked)}
-          />
-          Auto
-        </label>
+        <span className="rehearsal__tag">Cego</span>
       </header>
 
-      <div className="rehearsal__feed" aria-live="polite">
-        {history.map((idx) => (
-          <TurnCard key={`${sceneId}-${idx}`} turn={scene.turns[idx]} />
-        ))}
-
-        {!waitingForFrido && <TurnCard turn={turn} highlight />}
-
-        {waitingForFrido && (
-          <FridoPrompt
-            key={`${sceneId}-${turnIndex}`}
-            turn={turn}
-            mode={mode}
-            attemptCount={attemptCount}
-            onAttempt={handleAttempt}
-            onCorrect={advance}
-            onSkip={advance}
-          />
-        )}
-        <div ref={bottomRef} />
+      <div className="rehearsal__feed">
+        <LinePrompt
+          key={line.id}
+          line={line}
+          character={character}
+          mode={mode}
+          attemptCount={attemptCount}
+          alreadyMemorized={charProg.memorized.includes(line.id)}
+          onAttempt={() =>
+            onProgressChange((prev) => recordAttempt(prev, character, line.id))
+          }
+          onCorrect={() => advance(true)}
+          onSkip={() => advance(false)}
+        />
       </div>
 
-      {!waitingForFrido && (
-        <div className="rehearsal__controls">
-          <button
-            type="button"
-            className="btn btn--primary btn--block"
-            onClick={advance}
-          >
-            Próxima fala
-          </button>
-        </div>
-      )}
+      <p className="rehearsal__nav-hint">
+        Próximas cenas na fila:{' '}
+        {sceneKeys
+          .slice(scenePos)
+          .map((k) => {
+            const { scene } = parseSceneKey(k)
+            return scene
+          })
+          .join(', ') || '—'}
+      </p>
     </div>
   )
 }
