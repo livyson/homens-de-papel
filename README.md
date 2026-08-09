@@ -2,7 +2,19 @@
 
 App web para ensaiar de cor as falas do personagem **Frido** na peça *Homens de Papel*, de Plínio Marcos.
 
-## Como rodar
+## Acesso online (GitHub Pages)
+
+Depois do deploy: **https://livyson.github.io/homens-de-papel/**
+
+O push na branch `main` publica automaticamente via GitHub Actions (`.github/workflows/deploy.yml`).
+
+Na primeira vez, ative o Pages no repositório:
+
+1. Abra **Settings → Pages**
+2. Em **Build and deployment → Source**, escolha **GitHub Actions**
+3. Aguarde o workflow **Deploy to GitHub Pages** ficar verde em **Actions**
+
+## Como rodar localmente
 
 ```bash
 npm install
