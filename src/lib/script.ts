@@ -5,6 +5,7 @@ import type {
   CharacterLine,
   PlayRaw,
   SceneRef,
+  ScriptBeat,
 } from '../types'
 
 export const play = playJson as PlayRaw
@@ -199,6 +200,60 @@ export function getLinesForScenes(
   return getCharacterLines(character).filter((l) =>
     wanted.has(sceneKey(l.actId, l.scene)),
   )
+}
+
+/** Peça corrida nas cenas escolhidas, na ordem do roteiro. */
+export function getBeatsForScenes(
+  character: string,
+  sceneKeys: string[],
+): ScriptBeat[] {
+  const wanted = new Set(sceneKeys)
+  const beats: ScriptBeat[] = []
+
+  for (const actId of ACT_ORDER) {
+    const cenas = play.atos[actId]
+    if (!cenas) continue
+    for (const cena of cenas) {
+      const key = sceneKey(actId, cena.cena)
+      if (!wanted.has(key)) continue
+      cena.falas.forEach((f, falaIndex) => {
+        const speaker = f.personagem
+        const isRubric = !speaker
+        beats.push({
+          id: `${actId}::${cena.cena}::${falaIndex}`,
+          actId,
+          actLabel: getActLabel(actId),
+          scene: cena.cena,
+          falaIndex,
+          speaker,
+          text: f.fala,
+          isYou: speaker === character,
+          isRubric,
+        })
+      })
+    }
+  }
+
+  return beats
+}
+
+export function beatToCharacterLine(
+  beat: ScriptBeat,
+  character: string,
+): CharacterLine {
+  const cena = play.atos[beat.actId]?.find((c) => c.cena === beat.scene)
+  const falas = cena?.falas ?? []
+  return {
+    id: beat.id,
+    actId: beat.actId,
+    actLabel: beat.actLabel,
+    scene: beat.scene,
+    falaIndex: beat.falaIndex,
+    characterLineIndex: 0,
+    text: beat.text,
+    cue: findCue(falas, beat.falaIndex, character),
+    directions: nearbyDirections(falas, beat.falaIndex),
+  }
 }
 
 /** Cenas em que o personagem tem pelo menos uma fala (participação no roteiro). */

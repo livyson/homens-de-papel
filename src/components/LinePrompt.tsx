@@ -10,6 +10,8 @@ type Props = {
   mode: InputMode
   attemptCount: number
   alreadyMemorized: boolean
+  /** Quando a deixa já aparece nos balões da peça corrida */
+  hideCue?: boolean
   onCorrect: () => void
   onSkip: () => void
   onAttempt: () => void
@@ -21,6 +23,7 @@ export function LinePrompt({
   mode,
   attemptCount,
   alreadyMemorized,
+  hideCue = false,
   onCorrect,
   onSkip,
   onAttempt,
@@ -71,27 +74,31 @@ export function LinePrompt({
         {' · '}tentativas: <strong>{attemptCount}</strong>
       </p>
 
-      <div className="cue">
-        <p className="cue__label">Deixa</p>
-        {line.cue ? (
-          <>
-            <p className="cue__speaker">{line.cue.speaker}</p>
-            <p className="cue__text">“{line.cue.text}”</p>
-          </>
-        ) : (
-          <p className="cue__text cue__text--empty">
-            (Sem deixa — primeira fala da cena ou abertura)
-          </p>
-        )}
-      </div>
-
-      {line.directions.length > 0 && (
-        <p className="frido__dir">
-          ({line.directions.join(' ')})
-        </p>
+      {!hideCue && (
+        <div className="cue">
+          <p className="cue__label">Deixa</p>
+          {line.cue ? (
+            <>
+              <p className="cue__speaker">{line.cue.speaker}</p>
+              <p className="cue__text">“{line.cue.text}”</p>
+            </>
+          ) : (
+            <p className="cue__text cue__text--empty">
+              (Sem deixa — primeira fala da cena ou abertura)
+            </p>
+          )}
+        </div>
       )}
 
-      <p className="frido__cue">Modo cego — produza a fala de memória.</p>
+      {!hideCue && line.directions.length > 0 && (
+        <p className="frido__dir">({line.directions.join(' ')})</p>
+      )}
+
+      <p className="frido__cue">
+        {hideCue
+          ? 'Sua fala — responda de memória.'
+          : 'Modo cego — produza a fala de memória.'}
+      </p>
 
       {mode === 'type' ? (
         <form className="frido__form" onSubmit={handleSubmit}>

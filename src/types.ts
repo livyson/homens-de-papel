@@ -56,6 +56,19 @@ export type CharacterLine = {
   directions: string[]
 }
 
+/** Turno da peça corrida (qualquer personagem ou rubrica). */
+export type ScriptBeat = {
+  id: string
+  actId: ActId
+  actLabel: string
+  scene: string
+  falaIndex: number
+  speaker: string | null
+  text: string
+  isYou: boolean
+  isRubric: boolean
+}
+
 export type InputMode = 'type' | 'voice'
 
 export type WordMark = {

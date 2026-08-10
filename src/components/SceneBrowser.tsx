@@ -125,7 +125,8 @@ export function SceneBrowser({
           </label>
         </div>
         <p className="panel__hint">
-          Modo cego: você vê só a deixa e produz a fala de memória.
+          A peça corre em balões; na sua vez, o texto some e você responde de
+          memória.
         </p>
       </section>
 

@@ -832,6 +832,86 @@ button {
   border-radius: inherit;
 }
 
+/* SPEECH BUBBLES — peça corrida */
+.scene-divider {
+  margin: 0.85rem 0 0.35rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.bubble {
+  max-width: min(92%, 34rem);
+  padding: 0.75rem 0.95rem;
+  border-radius: 16px;
+  animation: rise 0.3s ease both;
+}
+
+.bubble.is-new {
+  animation: pop 0.35s ease both;
+}
+
+.bubble--other {
+  margin-right: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-bottom-left-radius: 4px;
+}
+
+.bubble--you {
+  margin-left: auto;
+  background: linear-gradient(180deg, #efe2c4 0%, var(--paper) 100%);
+  color: var(--ink);
+  border-bottom-right-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+.bubble--you .bubble__speaker {
+  color: #6b5a42;
+}
+
+.bubble--you .bubble__text {
+  color: var(--ink);
+}
+
+.bubble--rubric {
+  margin: 0.25rem auto;
+  max-width: min(96%, 36rem);
+  background: transparent;
+  border: none;
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-dialogue);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  padding: 0.35rem 0.5rem;
+}
+
+.bubble--rubric p {
+  margin: 0;
+}
+
+.bubble__speaker {
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.bubble__text {
+  margin: 0;
+  font-family: var(--font-dialogue);
+  font-size: clamp(1rem, 3.6vw, 1.15rem);
+  line-height: 1.45;
+  color: var(--chalk);
+}
+
 /* CUE / BLIND */
 .cue {
   margin: 0 0 0.85rem;
