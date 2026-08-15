@@ -4,7 +4,9 @@ import {
   countMemorizedIn,
   getCharacterProgress,
 } from '../lib/progress'
-import { isSpeechSupported } from '../lib/speech'
+import { useSpeechSynthesis } from '../hooks/useSpeechSynthesis'
+import { hasAiTtsKey, hasBuiltInAiTtsKey } from '../lib/aiTts'
+import { isSpeechSupported, warmupSpeech } from '../lib/speech'
 import {
   actsForCharacter,
   getCastMember,
@@ -41,6 +43,12 @@ export function SceneBrowser({
   const [selected, setSelected] = useState<string[]>([])
   const [mode, setMode] = useState<InputMode>(speechOk ? 'voice' : 'type')
   const [actFilter, setActFilter] = useState<string>('all')
+  const {
+    loading: voiceLoading,
+    ready: voiceReady,
+    progress: voiceProgress,
+    usingAi,
+  } = useSpeechSynthesis(mode === 'voice')
 
   const visible = scenes.filter(
     (s) => actFilter === 'all' || s.actId === actFilter,
@@ -65,6 +73,7 @@ export function SceneBrowser({
 
   function handleStart() {
     if (!selected.length) return
+    if (mode === 'voice') warmupSpeech()
     const ordered = scenes
       .map((s) => sceneKey(s.actId, s.scene))
       .filter((k) => selected.includes(k))
@@ -127,7 +136,25 @@ export function SceneBrowser({
         <p className="panel__hint">
           A peça corre em balões; na sua vez, o texto some e você responde de
           memória.
+          {mode === 'voice'
+            ? usingAi || hasAiTtsKey() || hasBuiltInAiTtsKey()
+              ? ' As falas dos outros personagens são lidas automaticamente pela ElevenLabs, em português do Brasil.'
+              : ' Sem chave de IA, o app usa a voz local.'
+            : ''}
         </p>
+        {mode === 'voice' && !usingAi && voiceLoading && (
+          <p className="voice-prep" role="status">
+            Baixando voz local…
+            <span className="voice-prep__bar" aria-hidden>
+              <span style={{ width: `${Math.round(voiceProgress * 100)}%` }} />
+            </span>
+          </p>
+        )}
+        {mode === 'voice' && voiceReady && !voiceLoading && (
+          <p className="panel__hint">
+            {usingAi ? 'Voz de IA pronta para o ensaio.' : 'Voz local pronta para o ensaio.'}
+          </p>
+        )}
       </section>
 
       <section className="panel">

@@ -25,6 +25,43 @@ function fold(s: string): string {
     .replace(/[^a-z0-9]+/g, '')
 }
 
+export type SpeakerGender = 'male' | 'female'
+
+const FEMALE_SPEAKERS = new Set([
+  'chicona',
+  'mariavai',
+  'noca',
+  'nhanha',
+  'ga',
+  'poquinha',
+  'pequena',
+  'tonha',
+  'donaju',
+])
+
+const MALE_SPEAKERS = new Set([
+  'coco',
+  'berrao',
+  'tiao',
+  'bichado',
+  'frido',
+  'zemiudo',
+  'bento',
+  'carcara',
+  'tom',
+  'tomdorelogio',
+])
+
+/** Gênero do personagem no roteiro (não do ator). */
+export function speakerGender(speaker?: string | null): SpeakerGender {
+  if (!speaker) return 'male'
+  const key = fold(speaker)
+  if (FEMALE_SPEAKERS.has(key)) return 'female'
+  if (MALE_SPEAKERS.has(key)) return 'male'
+  if (key.startsWith('dona') || /(inha|ona)$/.test(key)) return 'female'
+  return 'male'
+}
+
 function allSpeakers(): string[] {
   const set = new Set<string>()
   for (const cenas of Object.values(play.atos)) {

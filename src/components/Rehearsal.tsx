@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { LinePrompt } from './LinePrompt'
 import { SpeechBubble } from './SpeechBubble'
+import { useSpeechSynthesis } from '../hooks/useSpeechSynthesis'
 import {
   getCharacterProgress,
   markMemorized,
@@ -14,6 +15,7 @@ import {
   parseSceneKey,
   sceneKey,
 } from '../lib/script'
+import { spokenDialogue } from '../lib/speech'
 import type { InputMode, ProgressState, ScriptBeat } from '../types'
 
 type Props = {
@@ -53,6 +55,15 @@ export function Rehearsal({
   const [autoPlay, setAutoPlay] = useState(true)
   const bottomRef = useRef<HTMLDivElement>(null)
   const charProg = getCharacterProgress(progress, character)
+  const {
+    speaking,
+    loading: voiceLoading,
+    ready: voiceReady,
+    progress: voiceProgress,
+    speak,
+    cancel,
+  } = useSpeechSynthesis(mode === 'voice')
+  const voiceCue = mode === 'voice' && voiceReady
 
   const beat = beats[cursor]
   const waitingForYou = Boolean(beat?.isYou)
@@ -67,15 +78,42 @@ export function Rehearsal({
   }, [revealed.length, waitingForYou, cursor])
 
   useEffect(() => {
-    if (!beat || waitingForYou || !autoPlay) return undefined
+    if (!beat || waitingForYou) {
+      cancel()
+      return undefined
+    }
 
+    if (mode === 'voice' && (voiceLoading || !voiceReady)) {
+      return undefined
+    }
+
+    const canSpeak =
+      voiceCue && !beat.isRubric && Boolean(spokenDialogue(beat.text))
+
+    if (canSpeak) {
+      let cancelled = false
+      let followUp: number | undefined
+      speak(beat.text, beat.speaker).then((outcome) => {
+        if (cancelled || !autoPlay) return
+        const delay = outcome === 'spoke' ? 400 : AUTO_MS
+        followUp = window.setTimeout(() => {
+          if (!cancelled) revealAndAdvance()
+        }, delay)
+      })
+      return () => {
+        cancelled = true
+        if (followUp !== undefined) window.clearTimeout(followUp)
+        cancel()
+      }
+    }
+
+    if (!autoPlay) return undefined
     const timer = window.setTimeout(() => {
       revealAndAdvance()
     }, AUTO_MS)
-
     return () => window.clearTimeout(timer)
     // eslint-disable-next-line react-hooks/exhaustive-deps -- advance via stable helpers
-  }, [beat?.id, waitingForYou, autoPlay, cursor])
+  }, [beat?.id, waitingForYou, autoPlay, cursor, voiceCue, voiceLoading, voiceReady, mode])
 
   function finishIfDone(nextIndex: number) {
     if (nextIndex >= beats.length) {
@@ -170,6 +208,18 @@ export function Rehearsal({
         </label>
       </header>
 
+      {mode === 'voice' && voiceLoading && (
+        <p className="voice-prep" role="status">
+          Preparando voz natural…
+          <span
+            className="voice-prep__bar"
+            aria-hidden
+          >
+            <span style={{ width: `${Math.round(voiceProgress * 100)}%` }} />
+          </span>
+        </p>
+      )}
+
       <div className="rehearsal__feed" aria-live="polite">
         {revealed.map((b) => {
           const key = sceneKey(b.actId, b.scene)
@@ -215,7 +265,7 @@ export function Rehearsal({
                 {beat.actLabel} · Cena {beat.scene}
               </p>
             ) : null}
-            <SpeechBubble beat={beat} highlight />
+            <SpeechBubble beat={beat} highlight speaking={speaking} />
           </>
         )}
 
@@ -229,7 +279,7 @@ export function Rehearsal({
             className="btn btn--primary btn--block"
             onClick={revealAndAdvance}
           >
-            Próxima fala
+            {speaking ? 'Pular fala' : 'Próxima fala'}
           </button>
         </div>
       )}
