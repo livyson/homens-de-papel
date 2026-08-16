@@ -1,4 +1,5 @@
 import { cancelAiTts, hasAiTtsKey, synthesizeAiSpeech } from './aiTts'
+import { prepareSpeech, type SpeechDelivery } from './intonation'
 import { speakerGender, type SpeakerGender } from './script'
 
 type SpeechRecognitionLike = {
@@ -58,10 +59,7 @@ function isBrowserTtsAvailable(): boolean {
 
 /** Remove rubricas entre parênteses para a leitura soar como fala de palco. */
 export function spokenDialogue(text: string): string {
-  return text
-    .replace(/\([^)]*\)/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
+  return prepareSpeech(text).spoken
 }
 
 export type SpeakOutcome = 'spoke' | 'skipped' | 'failed'
@@ -137,9 +135,9 @@ function hashSpeaker(speaker: string): number {
   return hash
 }
 
-function rateForSpeaker(speaker?: string | null): number {
-  if (!speaker) return 0.94
-  return 0.88 + (hashSpeaker(speaker) % 13) / 100
+function rateForSpeaker(speaker?: string | null, scale = 1): number {
+  const base = speaker ? 0.88 + (hashSpeaker(speaker) % 13) / 100 : 0.94
+  return Math.min(1.25, Math.max(0.7, base * scale))
 }
 
 function unlockAudio() {
@@ -352,7 +350,7 @@ function waitForVoices(): Promise<void> {
 }
 
 function speakWithBrowser(
-  text: string,
+  delivery: SpeechDelivery,
   speaker?: string | null,
   gender: SpeakerGender = 'male',
 ): Promise<SpeakOutcome> {
@@ -363,12 +361,13 @@ function speakWithBrowser(
     let started = false
     let settled = false
 
-    const utterance = new SpeechSynthesisUtterance(text)
+    const utterance = new SpeechSynthesisUtterance(delivery.spoken)
     currentUtterance = utterance
     utterance.lang = 'pt-BR'
     utterance.voice = voice
-    utterance.rate = rateForSpeaker(speaker)
-    utterance.pitch = gender === 'female' ? 1.08 : 0.92
+    utterance.rate = rateForSpeaker(speaker, delivery.rateScale)
+    const basePitch = gender === 'female' ? 1.08 : 0.92
+    utterance.pitch = Math.min(2, Math.max(0.5, basePitch + delivery.pitchShift))
 
     const finish = (outcome: SpeakOutcome) => {
       if (settled) return
@@ -404,16 +403,17 @@ export async function speakLine(opts: {
   speaker?: string | null
 }): Promise<SpeakOutcome> {
   if (typeof window === 'undefined') return 'failed'
-  const dialogue = spokenDialogue(opts.text)
-  if (!dialogue) return 'skipped'
+  const delivery = prepareSpeech(opts.text)
+  if (!delivery.spoken) return 'skipped'
 
   cancelSpeech()
 
   const gender = speakerGender(opts.speaker)
+  const rate = rateForSpeaker(opts.speaker, delivery.rateScale)
 
   if (hasAiTtsKey()) {
     try {
-      const url = await synthesizeAiSpeech(dialogue, gender)
+      const url = await synthesizeAiSpeech(delivery, gender)
       return await playUrl(url)
     } catch (error) {
       if (error instanceof DOMException && error.name === 'AbortError') {
@@ -428,8 +428,8 @@ export async function speakLine(opts: {
   try {
     const gendered = await ensureKokoro()
     if (gendered) {
-      const audio = await gendered.falar(dialogue, {
-        velocidade: rateForSpeaker(opts.speaker),
+      const audio = await gendered.falar(delivery.spoken, {
+        velocidade: rate,
         voz: voiceName,
       })
       return await playNeural(audio)
@@ -442,8 +442,8 @@ export async function speakLine(opts: {
     try {
       const maleEngine = await ensurePiper()
       if (maleEngine) {
-        const audio = await maleEngine.falar(dialogue, {
-          velocidade: rateForSpeaker(opts.speaker),
+        const audio = await maleEngine.falar(delivery.spoken, {
+          velocidade: rate,
           ruido: 0.78,
           ruidoW: 0.9,
         })
@@ -455,5 +455,5 @@ export async function speakLine(opts: {
   }
 
   await waitForVoices()
-  return speakWithBrowser(dialogue, opts.speaker, gender)
+  return speakWithBrowser(delivery, opts.speaker, gender)
 }

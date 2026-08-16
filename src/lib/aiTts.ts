@@ -1,3 +1,4 @@
+import type { SpeechDelivery } from './intonation'
 import type { SpeakerGender } from './script'
 
 const STORAGE_KEY = 'homens-de-papel:elevenlabs-key'
@@ -109,21 +110,28 @@ async function resolveVoices(signal: AbortSignal): Promise<{ female: string; mal
   return resolvedVoices
 }
 
+type ElevenModel = 'eleven_v3' | 'eleven_multilingual_v2' | 'eleven_turbo_v2_5'
+
 async function requestSpeech(
   text: string,
   voiceId: string,
-  model: 'eleven_multilingual_v2' | 'eleven_turbo_v2_5',
+  model: ElevenModel,
+  delivery: SpeechDelivery,
   signal: AbortSignal,
 ): Promise<Response> {
+  const voiceSettings: Record<string, unknown> = {
+    stability: delivery.stability,
+    similarity_boost: 0.75,
+    use_speaker_boost: true,
+  }
+  if (model !== 'eleven_v3') {
+    voiceSettings.style = delivery.style
+  }
+
   const body: Record<string, unknown> = {
     text,
     model_id: model,
-    voice_settings: {
-      stability: 0.4,
-      similarity_boost: 0.8,
-      style: 0.35,
-      use_speaker_boost: true,
-    },
+    voice_settings: voiceSettings,
   }
   if (model === 'eleven_turbo_v2_5') body.language_code = 'pt'
 
@@ -140,10 +148,10 @@ async function requestSpeech(
 }
 
 export async function synthesizeAiSpeech(
-  text: string,
+  delivery: SpeechDelivery,
   gender: SpeakerGender,
 ): Promise<string> {
-  const cacheKey = `${gender}:${text}`
+  const cacheKey = `${gender}:${delivery.tone}:${delivery.tagged}`
   const hit = cache.get(cacheKey)
   if (hit) return hit
 
@@ -158,13 +166,29 @@ export async function synthesizeAiSpeech(
   const voiceId = gender === 'female' ? voices.female : voices.male
 
   let response = await requestSpeech(
-    text,
+    delivery.tagged,
     voiceId,
-    'eleven_multilingual_v2',
+    'eleven_v3',
+    delivery,
     abort.signal,
   )
   if (!response.ok) {
-    response = await requestSpeech(text, voiceId, 'eleven_turbo_v2_5', abort.signal)
+    response = await requestSpeech(
+      delivery.spoken,
+      voiceId,
+      'eleven_multilingual_v2',
+      delivery,
+      abort.signal,
+    )
+  }
+  if (!response.ok) {
+    response = await requestSpeech(
+      delivery.spoken,
+      voiceId,
+      'eleven_turbo_v2_5',
+      delivery,
+      abort.signal,
+    )
   }
   if (!response.ok) {
     throw new Error(`elevenlabs-${response.status}`)
