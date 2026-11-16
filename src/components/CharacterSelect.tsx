@@ -32,7 +32,7 @@ export function CharacterSelect({ progress, onSelect }: Props) {
               <li key={member.elencoKey}>
                 <button
                   type="button"
-                  className="cast-item"
+                  className={`cast-item${progress.lastCharacter === member.character ? ' is-last' : ''}`}
                   onClick={() => onSelect(member.character)}
                 >
                   <span className="cast-item__actor">{member.actor}</span>
@@ -42,6 +42,7 @@ export function CharacterSelect({ progress, onSelect }: Props) {
                     {member.sceneCount === 1 ? '' : 's'} · {member.lineCount}{' '}
                     falas
                     {done > 0 ? ` · ${done} decoradas` : ''}
+                    {progress.lastCharacter === member.character ? ' · continuar' : ''}
                   </span>
                 </button>
               </li>

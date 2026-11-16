@@ -51,8 +51,10 @@ export function Rehearsal({
   )
 
   const [cursor, setCursor] = useState(0)
+  const cursorRef = useRef(0)
   const [revealed, setRevealed] = useState<ScriptBeat[]>([])
-  const [autoPlay, setAutoPlay] = useState(true)
+  const [autoPlay, setAutoPlay] = useState(false)
+  const [voiceMissed, setVoiceMissed] = useState(false)
   const bottomRef = useRef<HTMLDivElement>(null)
   const charProg = getCharacterProgress(progress, character)
   const {
@@ -78,6 +80,10 @@ export function Rehearsal({
   }, [revealed.length, waitingForYou, cursor])
 
   useEffect(() => {
+    setVoiceMissed(false)
+  }, [beat?.id])
+
+  useEffect(() => {
     if (!beat || waitingForYou) {
       cancel()
       return undefined
@@ -95,6 +101,10 @@ export function Rehearsal({
       let followUp: number | undefined
       speak(beat.text, beat.speaker).then((outcome) => {
         if (cancelled || !autoPlay) return
+        if (outcome === 'failed') {
+          setVoiceMissed(true)
+          return
+        }
         const delay = outcome === 'spoke' ? 400 : AUTO_MS
         followUp = window.setTimeout(() => {
           if (!cancelled) revealAndAdvance()
@@ -123,7 +133,7 @@ export function Rehearsal({
     return false
   }
 
-  function markSceneIfLeaving(fromIndex: number) {
+  function markSceneIfLeaving(fromIndex: number, memorizedId?: string) {
     const current = beats[fromIndex]
     if (!current) return
     const next = beats[fromIndex + 1]
@@ -131,34 +141,47 @@ export function Rehearsal({
       !next ||
       next.actId !== current.actId ||
       next.scene !== current.scene
-    if (leaving) {
-      onProgressChange((prev) =>
-        markSceneComplete(prev, character, sceneKey(current.actId, current.scene)),
-      )
-    }
+    if (!leaving) return
+    const key = sceneKey(current.actId, current.scene)
+    const lineIds = yourLines
+      .filter((line) => sceneKey(line.actId, line.scene) === key)
+      .map((line) => line.id)
+    onProgressChange((prev) => {
+      const memorized = new Set(getCharacterProgress(prev, character).memorized)
+      if (memorizedId) memorized.add(memorizedId)
+      const allDone = lineIds.length > 0 && lineIds.every((id) => memorized.has(id))
+      if (!allDone) return prev
+      return markSceneComplete(prev, character, key)
+    })
   }
 
-  function revealAndAdvance() {
-    const current = beats[cursor]
+  function commitAdvance(index: number, markDone: boolean) {
+    if (cursorRef.current !== index) return
+    const current = beats[index]
     if (!current) return
-    setRevealed((prev) => [...prev, current])
-    markSceneIfLeaving(cursor)
-    const next = cursor + 1
-    if (finishIfDone(next)) return
-    setCursor(next)
-  }
-
-  function onYourAnswer(markDone: boolean) {
-    const current = beats[cursor]
-    if (!current?.isYou) return
+    if (markDone && !current.isYou) return
+    cursorRef.current = index + 1
     if (markDone) {
       onProgressChange((prev) => markMemorized(prev, character, current.id))
     }
-    setRevealed((prev) => [...prev, current])
-    markSceneIfLeaving(cursor)
-    const next = cursor + 1
+    setRevealed((prev) =>
+      prev.some((beat) => beat.id === current.id) ? prev : [...prev, current],
+    )
+    markSceneIfLeaving(index, markDone ? current.id : undefined)
+    const next = index + 1
     if (finishIfDone(next)) return
     setCursor(next)
+  }
+
+  function revealAndAdvance() {
+    commitAdvance(cursorRef.current, false)
+  }
+
+  function onYourAnswer(markDone: boolean) {
+    const index = cursorRef.current
+    const current = beats[index]
+    if (!current?.isYou) return
+    commitAdvance(index, markDone)
   }
 
   if (!beats.length) {
@@ -207,6 +230,12 @@ export function Rehearsal({
           Auto
         </label>
       </header>
+
+      {voiceMissed && (
+        <p className="voice-prep" role="status">
+          A leitura falhou. Use Próxima fala para continuar.
+        </p>
+      )}
 
       {mode === 'voice' && voiceLoading && (
         <p className="voice-prep" role="status">

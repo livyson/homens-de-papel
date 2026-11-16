@@ -37,7 +37,11 @@ export function loadProgress(): ProgressState {
 
 export function saveProgress(state: ProgressState): void {
   const next = { ...state, version: 2 as const, updatedAt: new Date().toISOString() }
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
+  } catch {
+    /* a cota ou o modo privado não podem interromper o ensaio */
+  }
 }
 
 function withCharacter(

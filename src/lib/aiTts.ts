@@ -13,14 +13,7 @@ const cache = new Map<string, string>()
 let currentAbort: AbortController | null = null
 let resolvedVoices: { female: string; male: string } | null = null
 
-function envKey(): string {
-  const value = import.meta.env.VITE_ELEVENLABS_API_KEY
-  return typeof value === 'string' ? value.trim() : ''
-}
-
 export function getAiTtsKey(): string {
-  const fromEnv = envKey()
-  if (fromEnv) return fromEnv
   try {
     return localStorage.getItem(STORAGE_KEY)?.trim() ?? ''
   } catch {
@@ -30,10 +23,6 @@ export function getAiTtsKey(): string {
 
 export function hasAiTtsKey(): boolean {
   return getAiTtsKey().length > 0
-}
-
-export function hasBuiltInAiTtsKey(): boolean {
-  return envKey().length > 0
 }
 
 export function setAiTtsKey(key: string) {

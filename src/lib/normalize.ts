@@ -64,7 +64,7 @@ const SYNONYM_GROUPS: string[][] = [
   ['homem', 'cara', 'sujeito', 'senhor', 'seu'],
   ['mulher', 'moca'],
   ['dinheiro', 'grana', 'prata'],
-  ['crianca', 'menina', 'cria', 'filha', 'filho', 'ga'],
+  ['crianca', 'menina', 'cria'],
   ['medico', 'doutor'],
   ['saco', 'sacos'],
   ['gente', 'pessoal', 'galera'],
@@ -95,7 +95,6 @@ const STOP = new Set([
   'se',
   'com',
   'por',
-  'para',
   'me',
   'te',
   'lhe',
@@ -103,17 +102,10 @@ const STOP = new Set([
   'vos',
   'eu',
   'tu',
-  'ele',
-  'ela',
-  'eles',
-  'elas',
   'meu',
   'minha',
   'seu',
   'sua',
-  'ja',
-  'nao',
-  'so',
   'ai',
   'la',
   'ali',
@@ -186,26 +178,38 @@ function sameSynonymGroup(a: string, b: string): boolean {
 export function wordsAlike(a: string, b: string): boolean {
   if (!a || !b) return false
   if (a === b) return true
+  if (
+    (a === 'filho' && b === 'filha') ||
+    (a === 'filha' && b === 'filho')
+  ) {
+    return false
+  }
   if (sameSynonymGroup(a, b)) return true
   const minLen = Math.min(a.length, b.length)
   const threshold = minLen <= 3 ? 0.99 : minLen <= 5 ? 0.8 : 0.72
   return similarity(a, b) >= threshold
 }
 
-function coverageNeeded(contentCount: number): number {
-  if (contentCount <= 1) return 1
-  if (contentCount <= 3) return 0.84
-  if (contentCount <= 8) return 0.78
-  return 0.72
+/** Palavras que invertem o sentido. Não podem faltar nem sobrar. */
+const POLARITY = new Set([
+  'nao',
+  'nunca',
+  'jamais',
+  'sem',
+  'nem',
+  'nenhum',
+  'nenhuma',
+  'ninguem',
+])
+
+/** Tira rubrica entre parênteses. O ator decora a fala, não a instrução de cena. */
+export function stripStageDirections(input: string): string {
+  return input.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim()
 }
 
-/**
- * Alinha falas pelo sentido: aceita ordem flexível, sinônimos,
- * pequenas diferenças de digitação/voz e omissão de conectivos.
- */
 export function compareLines(expected: string, actual: string): CompareResult {
-  const expectedWords = tokenize(expected)
-  const actualWords = tokenize(actual)
+  const expectedWords = tokenize(stripStageDirections(expected))
+  const actualWords = tokenize(stripStageDirections(actual))
   const usedActual = new Set<number>()
   const matchedExpected = new Set<number>()
 
@@ -238,7 +242,7 @@ export function compareLines(expected: string, actual: string): CompareResult {
 
   for (let j = 0; j < actualWords.length; j++) {
     const act = actualWords[j]
-    if (usedActual.has(j) || !isContent(act)) {
+    if (usedActual.has(j)) {
       marks.push({ word: act, status: 'match' })
     } else {
       marks.push({ word: act, status: 'extra' })
@@ -261,18 +265,30 @@ export function compareLines(expected: string, actual: string): CompareResult {
   }
 
   const extraContent = marks.filter((m) => m.status === 'extra').length
-  const ratio =
-    totalContent === 0
-      ? actualWords.length > 0
-        ? 1
-        : 0
-      : matchedContent / totalContent
-  const needed = coverageNeeded(totalContent)
+  const ratio = totalContent === 0 ? 0 : matchedContent / totalContent
+  const needed = 1
   const extraPenalty =
     totalContent === 0 ? 0 : extraContent / Math.max(totalContent, 1)
+  const missedPolarity = expectedWords.some(
+    (word, index) => POLARITY.has(word) && !matchedExpected.has(index),
+  )
+  const extraPolarity = actualWords.some(
+    (word, index) => POLARITY.has(word) && !usedActual.has(index),
+  )
+  const shortLineMatches =
+    totalContent === 0 &&
+    expectedWords.length > 0 &&
+    expectedWords.length === actualWords.length &&
+    expectedWords.every((word, index) => wordsAlike(word, actualWords[index]))
 
   const ok =
-    actualWords.length > 0 && ratio >= needed && extraPenalty <= 0.45
+    totalContent === 0
+      ? shortLineMatches
+      : actualWords.length > 0 &&
+        ratio >= needed &&
+        extraPenalty <= 0.45 &&
+        !missedPolarity &&
+        !extraPolarity
 
   return { ok, expectedWords, actualWords, marks }
 }

@@ -13,6 +13,9 @@ export function useSpeechRecognition({ onFinal, onInterim }: Options) {
   const onFinalRef = useRef(onFinal)
   const onInterimRef = useRef(onInterim)
   const recRef = useRef<ReturnType<typeof createRecognizer>>(null)
+  const finalRef = useRef('')
+  const disposedRef = useRef(false)
+  const fatalRef = useRef(false)
 
   useEffect(() => {
     onFinalRef.current = onFinal
@@ -21,21 +24,25 @@ export function useSpeechRecognition({ onFinal, onInterim }: Options) {
 
   useEffect(() => {
     if (!supported) return
+    disposedRef.current = false
     const rec = createRecognizer()
     if (!rec) return
     recRef.current = rec
 
     rec.onresult = (event) => {
       let interim = ''
-      let finalText = ''
-      for (let i = 0; i < event.results.length; i++) {
+      const startAt = event.resultIndex ?? 0
+      for (let i = startAt; i < event.results.length; i++) {
         const result = event.results[i]
         const piece = result[0]?.transcript ?? ''
-        if (result.isFinal) finalText += piece
-        else interim += piece
+        if (result.isFinal) {
+          finalRef.current = `${finalRef.current} ${piece}`.trim()
+        } else {
+          interim += piece
+        }
       }
-      if (interim) onInterimRef.current?.(interim)
-      if (finalText.trim()) onFinalRef.current(finalText.trim())
+      const live = `${finalRef.current} ${interim}`.trim()
+      if (live) onInterimRef.current?.(live)
     }
 
     rec.onerror = (event) => {
@@ -43,17 +50,37 @@ export function useSpeechRecognition({ onFinal, onInterim }: Options) {
         setListening(false)
         return
       }
+      fatalRef.current = true
       setError(
         event.error === 'not-allowed'
           ? 'Permissão de microfone negada.'
-          : `Erro de voz: ${event.error}`,
+          : event.error === 'network'
+            ? 'O reconhecimento de voz não respondeu. Confira a conexão ou digite a fala.'
+            : event.error === 'audio-capture'
+              ? 'Não encontrei um microfone neste aparelho.'
+              : event.error === 'service-not-allowed'
+                ? 'O reconhecimento de voz está bloqueado neste navegador.'
+                : event.error === 'language-not-supported'
+                  ? 'Este navegador não reconhece português.'
+                  : 'Não foi possível ouvir a fala. Tente de novo ou digite.',
       )
       setListening(false)
     }
 
-    rec.onend = () => setListening(false)
+    rec.onend = () => {
+      setListening(false)
+      if (disposedRef.current) return
+      const text = finalRef.current.trim()
+      const fatal = fatalRef.current
+      finalRef.current = ''
+      fatalRef.current = false
+      if (fatal || !text) return
+      onFinalRef.current(text)
+    }
 
     return () => {
+      disposedRef.current = true
+      finalRef.current = ''
       try {
         rec.abort()
       } catch {
@@ -65,6 +92,8 @@ export function useSpeechRecognition({ onFinal, onInterim }: Options) {
 
   const start = () => {
     if (!recRef.current || listening) return
+    finalRef.current = ''
+    fatalRef.current = false
     setError(null)
     try {
       recRef.current.start()

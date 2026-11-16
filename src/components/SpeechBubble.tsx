@@ -8,9 +8,11 @@ type Props = {
 
 export function SpeechBubble({ beat, highlight, speaking }: Props) {
   if (beat.isRubric) {
+    const text = beat.text.trim()
+    const shown = text.startsWith('(') && text.endsWith(')') ? text : `(${text})`
     return (
       <div className={`bubble bubble--rubric ${highlight ? 'is-new' : ''}`}>
-        <p>({beat.text})</p>
+        <p>{shown}</p>
       </div>
     )
   }

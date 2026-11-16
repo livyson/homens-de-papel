@@ -1,7 +1,7 @@
-import { useEffect, useId, useState, type FormEvent } from 'react'
+import { useEffect, useId, useRef, useState, type FormEvent } from 'react'
 import { DiffFeedback } from './DiffFeedback'
 import { useSpeechRecognition } from '../hooks/useSpeechRecognition'
-import { compareLines } from '../lib/normalize'
+import { compareLines, stripStageDirections } from '../lib/normalize'
 import type { CharacterLine, CompareResult, InputMode } from '../types'
 
 type Props = {
@@ -28,12 +28,16 @@ export function LinePrompt({
   onSkip,
   onAttempt,
 }: Props) {
-  const expected = line.text
+  const expected = stripStageDirections(line.text) || line.text.trim()
   const inputId = useId()
   const [value, setValue] = useState('')
   const [interim, setInterim] = useState('')
   const [result, setResult] = useState<CompareResult | null>(null)
   const [revealed, setRevealed] = useState(false)
+  const [locked, setLocked] = useState(false)
+  const lockedRef = useRef(false)
+  const correctTimer = useRef<number | null>(null)
+  const feedbackRef = useRef<HTMLDivElement>(null)
 
   const { listening, error, start, stop } = useSpeechRecognition({
     onFinal: (transcript) => {
@@ -49,14 +53,33 @@ export function LinePrompt({
     setInterim('')
     setResult(null)
     setRevealed(false)
+    setLocked(false)
+    lockedRef.current = false
+    return () => {
+      if (correctTimer.current !== null) {
+        window.clearTimeout(correctTimer.current)
+        correctTimer.current = null
+      }
+    }
   }, [line.id])
 
+  useEffect(() => {
+    if (!result && !revealed) return
+    feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }, [result, revealed])
+
   function check(raw: string) {
+    if (lockedRef.current) return
     onAttempt()
     const cmp = compareLines(expected, raw)
     setResult(cmp)
     if (cmp.ok) {
-      window.setTimeout(() => onCorrect(), 450)
+      lockedRef.current = true
+      setLocked(true)
+      correctTimer.current = window.setTimeout(() => {
+        correctTimer.current = null
+        onCorrect()
+      }, 450)
     }
   }
 
@@ -117,7 +140,11 @@ export function LinePrompt({
             spellCheck={false}
             enterKeyHint="done"
           />
-          <button type="submit" className="btn btn--primary" disabled={!value.trim()}>
+          <button
+            type="submit"
+            className="btn btn--primary"
+            disabled={locked || !value.trim()}
+          >
             Conferir
           </button>
         </form>
@@ -140,6 +167,7 @@ export function LinePrompt({
             <button
               type="button"
               className="btn btn--primary"
+              disabled={locked}
               onClick={() => check(value)}
             >
               Conferir de novo
@@ -148,26 +176,35 @@ export function LinePrompt({
         </div>
       )}
 
-      {result?.ok && <p className="frido__ok">Certo! Seguindo…</p>}
-      {result && !result.ok && !revealed && (
-        <DiffFeedback result={result} expected={expected} />
-      )}
+      <div ref={feedbackRef}>
+        {result?.ok && <p className="frido__ok">Certo! Seguindo…</p>}
+        {result && !result.ok && !revealed && (
+          <DiffFeedback result={result} expected={expected} />
+        )}
 
-      {revealed && (
-        <div className="frido__reveal">
-          <p className="frido__reveal-label">Resposta</p>
-          <p className="frido__reveal-text">{expected}</p>
-          <button type="button" className="btn btn--primary" onClick={onSkip}>
-            Continuar
-          </button>
-        </div>
-      )}
+        {revealed && (
+          <div className="frido__reveal">
+            <p className="frido__reveal-label">Resposta</p>
+            <p className="frido__reveal-text">{expected}</p>
+            <button type="button" className="btn btn--primary" onClick={onSkip}>
+              Continuar
+            </button>
+          </div>
+        )}
+      </div>
 
       {!revealed && (
         <button
           type="button"
           className="btn btn--ghost"
           onClick={() => {
+            if (lockedRef.current) return
+            lockedRef.current = true
+            if (correctTimer.current !== null) {
+              window.clearTimeout(correctTimer.current)
+              correctTimer.current = null
+            }
+            setLocked(true)
             onAttempt()
             setRevealed(true)
           }}

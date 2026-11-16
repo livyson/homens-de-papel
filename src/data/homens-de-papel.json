@@ -28,17 +28,7 @@
         "falas": [
           {
             "personagem": null,
-            "fala": "(Ao abrir o pano, Coco, Tião, Maria-Vai, Chicona e Noca estão diante de Berrão, que traz um",
-            "tipo": "rubrica_ou_texto"
-          },
-          {
-            "personagem": null,
-            "fala": "revólver na cinta e uma balança de gancho na mão. Cada um dos catadores de papel arrastam",
-            "tipo": "rubrica_ou_texto"
-          },
-          {
-            "personagem": null,
-            "fala": "sacos cheios de papel)",
+            "fala": "(Ao abrir o pano, Coco, Tião, Maria-Vai, Chicona e Noca estão diante de Berrão, que traz um revólver na cinta e uma balança de gancho na mão. Cada um dos catadores de papel arrastam sacos cheios de papel)",
             "tipo": "rubrica_ou_texto"
           },
           {
@@ -139,7 +129,11 @@
           },
           {
             "personagem": "Berrão",
-            "fala": "Então não torra as minhas idéias. Se começar a me aporrinhar, te risco da lista. Coco - Me desculpe, falei por falar."
+            "fala": "Então não torra as minhas idéias. Se começar a me aporrinhar, te risco da lista."
+          },
+          {
+            "personagem": "Coco",
+            "fala": "Me desculpe, falei por falar."
           },
           {
             "personagem": "Berrão",
@@ -240,13 +234,12 @@
         "falas": [
           {
             "personagem": null,
-            "fala": "(Aproxima-se",
+            "fala": "(Aproxima-se Chicona)",
             "tipo": "rubrica_ou_texto"
           },
           {
-            "personagem": null,
-            "fala": "Chicona) Chicona -      Só dois.",
-            "tipo": "rubrica_ou_texto"
+            "personagem": "Chicona",
+            "fala": "Só dois."
           },
           {
             "personagem": "Berrão",
@@ -463,7 +456,11 @@
           },
           {
             "personagem": "Tião",
-            "fala": "Cala a boca, mulher. Sei o que faço. Berrão      (Empurra Tião pra longe) Deixa só ela aqui! Tem medo que eu cante tua mulher?"
+            "fala": "Cala a boca, mulher. Sei o que faço."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "(Empurra Tião pra longe) Deixa só ela aqui! Tem medo que eu cante tua mulher?"
           },
           {
             "personagem": "Maria-Vai",
@@ -575,7 +572,11 @@
           },
           {
             "personagem": "Berrão",
-            "fala": "Então se vira. Dona Jú - Berrão, meu filho, pesa os meus, mas pesa isso aqui com carinho. São as memórias do bairro. Carta velha, caderno de menino, até programa de cinema."
+            "fala": "Então se vira."
+          },
+          {
+            "personagem": "Dona Ju",
+            "fala": "Berrão, meu filho, pesa os meus, mas pesa isso aqui com carinho. São as memórias do bairro. Carta velha, caderno de menino, até programa de cinema."
           },
           {
             "personagem": "Berrão",
@@ -986,7 +987,11 @@
           },
           {
             "personagem": "Tião",
-            "fala": "Não sei porquê. Ele mete a mão no teu bolso como no meu. Pequena        Mas ele passa a tua mulher nas armas. -"
+            "fala": "Não sei porquê. Ele mete a mão no teu bolso como no meu."
+          },
+          {
+            "personagem": "Pequena",
+            "fala": "Mas ele passa a tua mulher nas armas."
           },
           {
             "personagem": "Tião",
@@ -1132,7 +1137,11 @@
           },
           {
             "personagem": "Maria-Vai",
-            "fala": "Só vou lá conferir o peso. Tião -Mas todo mundo fica falando que o Berrão te passa na cara."
+            "fala": "Só vou lá conferir o peso."
+          },
+          {
+            "personagem": "Tião",
+            "fala": "Mas todo mundo fica falando que o Berrão te passa na cara."
           },
           {
             "personagem": "Maria-Vai",
@@ -1186,7 +1195,11 @@
           },
           {
             "personagem": "Tom",
-            "fala": "Perde tempo com isso não Maria, vem perder tempo aqui comigo, vem. Maria – Vai – Cala boca Tom! Meu negócio é com essa biscate!"
+            "fala": "Perde tempo com isso não Maria, vem perder tempo aqui comigo, vem."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Cala boca Tom! Meu negócio é com essa biscate!"
           },
           {
             "personagem": "Pequena",
@@ -1331,7 +1344,27 @@
           },
           {
             "personagem": "Berrão",
-            "fala": "- Essa é boa! Quer parar meu negócio Tonha? NOCA:- Ponto parado é dinheiro jogado fora. BERRÃO:- Dinheiro meu. ZÉ MIÚDO:- Se tirar o ponto da Chicona, passa pra cá. CARCARÁ:- Pra você? Cê vive escondendo serviço. ZÉ MIÚDO:- Escondo porque tem bobo que faz por mim."
+            "fala": "Essa é boa! Quer parar meu negócio Tonha?"
+          },
+          {
+            "personagem": "Noca",
+            "fala": "Ponto parado é dinheiro jogado fora."
+          },
+          {
+            "personagem": "Berrão",
+            "fala": "Dinheiro meu."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Se tirar o ponto da Chicona, passa pra cá."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "Pra você? Cê vive escondendo serviço."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Escondo porque tem bobo que faz por mim."
           },
           {
             "personagem": "Carcará",
@@ -2181,12 +2214,7 @@
         "falas": [
           {
             "personagem": null,
-            "fala": "(Ao abrir o pano, todos estão jogados pelos cantos, dormindo. As garrafas vazias estão",
-            "tipo": "rubrica_ou_texto"
-          },
-          {
-            "personagem": null,
-            "fala": "espalhadas pelo palco. Nhanha acorda, olha o céu, o Sol lhe as vistas. Nhanha sacode Frido)",
+            "fala": "(Ao abrir o pano, todos estão jogados pelos cantos, dormindo. As garrafas vazias estão espalhadas pelo palco. Nhanha acorda, olha o céu, o Sol lhe as vistas. Nhanha sacode Frido)",
             "tipo": "rubrica_ou_texto"
           },
           {
@@ -2849,7 +2877,11 @@
           },
           {
             "personagem": "Gá",
-            "fala": "Nhanha! Nhanha! Maria – Vai – Me larga! (Tião segura os braços de Maria Vai que se levanta e quando ela fala, ele a solta novamente) (Nhanha tenta tirar Gá da confusão. Consegue. Gá tentase afastar e cai em cima de Chicona)"
+            "fala": "Nhanha! Nhanha!"
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "Me larga! (Tião segura os braços de Maria Vai que se levanta e quando ela fala, ele a solta novamente) (Nhanha tenta tirar Gá da confusão. Consegue. Gá tenta se afastar e cai em cima de Chicona)"
           },
           {
             "personagem": "Chicona",
@@ -3335,7 +3367,11 @@
           },
           {
             "personagem": "Coco",
-            "fala": "Até de noite ela se encolhe. Zé Miudo – Até a noite não sei... Mais uma hora ela tem que afrouxar... isso se quiser continuar aqui."
+            "fala": "Até de noite ela se encolhe."
+          },
+          {
+            "personagem": "Zé Miúdo",
+            "fala": "Até a noite não sei... Mais uma hora ela tem que afrouxar... isso se quiser continuar aqui."
           },
           {
             "personagem": "Carcará",
@@ -4267,7 +4303,7 @@
           },
           {
             "personagem": "Bichado",
-            "fala": "Vamos agarrar esse puto. (Coco, sem expressão, olha a menina. Está com a faca mão)"
+            "fala": "Vamos agarrar esse puto. (Coco, sem expressão, olha a menina. Está com a faca na mão)"
           },
           {
             "personagem": "Poquinha",
@@ -4287,7 +4323,15 @@
           },
           {
             "personagem": "Tonha",
-            "fala": "A mãe é que diz o que fazer. Carcará     É isso. Melhor esperar. A gente fica nas encolhas. Maria- Vai - O cara ta batusquela. É perigoso. (Todos ficam espiando Coco ao lado da menina. Entram Frido e Nhanha)"
+            "fala": "A mãe é que diz o que fazer."
+          },
+          {
+            "personagem": "Carcará",
+            "fala": "É isso. Melhor esperar. A gente fica nas encolhas."
+          },
+          {
+            "personagem": "Maria-Vai",
+            "fala": "O cara ta batusquela. É perigoso. (Todos ficam espiando Coco ao lado da menina. Entram Frido e Nhanha)"
           },
           {
             "personagem": "Nhanha",

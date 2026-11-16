@@ -5,7 +5,7 @@ import {
   getCharacterProgress,
 } from '../lib/progress'
 import { useSpeechSynthesis } from '../hooks/useSpeechSynthesis'
-import { hasAiTtsKey, hasBuiltInAiTtsKey } from '../lib/aiTts'
+import { hasAiTtsKey } from '../lib/aiTts'
 import { isSpeechSupported, warmupSpeech } from '../lib/speech'
 import {
   actsForCharacter,
@@ -68,7 +68,12 @@ export function SceneBrowser({
   }
 
   function selectVisible() {
-    setSelected(visible.map((s) => sceneKey(s.actId, s.scene)))
+    const visibleKeys = visible.map((s) => sceneKey(s.actId, s.scene))
+    const visibleSet = new Set(visibleKeys)
+    setSelected((prev) => [
+      ...prev.filter((key) => !visibleSet.has(key)),
+      ...visibleKeys,
+    ])
   }
 
   function handleStart() {
@@ -137,7 +142,7 @@ export function SceneBrowser({
           A peça corre em balões; na sua vez, o texto some e você responde de
           memória.
           {mode === 'voice'
-            ? usingAi || hasAiTtsKey() || hasBuiltInAiTtsKey()
+            ? usingAi || hasAiTtsKey()
               ? ' As falas dos outros personagens são lidas automaticamente pela ElevenLabs, em português do Brasil.'
               : ' Sem chave de IA, o app usa a voz local.'
             : ''}
@@ -247,7 +252,9 @@ export function SceneBrowser({
           onClick={handleStart}
         >
           Começar ensaio cego
-          {selected.length ? ` (${selected.length} cenas)` : ''}
+          {selected.length
+            ? ` (${selected.length} cena${selected.length === 1 ? '' : 's'})`
+            : ''}
         </button>
         {charProg.memorized.length > 0 && (
           <button

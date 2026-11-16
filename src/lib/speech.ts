@@ -16,6 +16,7 @@ type SpeechRecognitionLike = {
 }
 
 type SpeechRecognitionEventLike = {
+  resultIndex: number
   results: {
     length: number
     [index: number]: {
@@ -43,7 +44,7 @@ export function createRecognizer(): SpeechRecognitionLike | null {
   if (!Ctor) return null
   const rec = new Ctor()
   rec.lang = 'pt-BR'
-  rec.continuous = false
+  rec.continuous = true
   rec.interimResults = true
   rec.maxAlternatives = 1
   return rec
@@ -381,7 +382,7 @@ function speakWithBrowser(
       started = true
     }
     utterance.onend = () => finish(started ? 'spoke' : 'failed')
-    utterance.onerror = () => finish(started ? 'spoke' : 'failed')
+    utterance.onerror = () => finish('failed')
 
     keepAliveTimer = window.setInterval(() => {
       if (window.speechSynthesis.speaking) {
